@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Install Amazon S3 AWS-cli &middot; Ciprian Turcu&#39;s website </title>
+
+
+<link rel="stylesheet" href="http://ciprianturcu.comcss/slim.css">
+<link rel="stylesheet" href="http://ciprianturcu.comcss/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="../favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Ciprian Turcu&#39;s website" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://ciprianturcu.com">Ciprian Turcu&#39;s website</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+  
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://ciprianturcu.com/posts/install_aws-cli.html">Install Amazon S3 AWS-cli</a></h2>
+        <div class="post-content">
+          
+
+<h3 id="what-is-aws-cli:afd5bca8c26701bcade19257fb233fa1">What is AWS-cli?</h3>
+
+<p>AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.</p>
+
+<h3 id="how-do-i-install-it:afd5bca8c26701bcade19257fb233fa1">How do I install it?</h3>
+
+<p>Since this is built in python,weel, first you have to have python installed. To check that and see it&rsquo;s version</p>
+
+<pre><code>python --version
+</code></pre>
+
+<p>Then Download the installer:</p>
+
+<pre><code>curl &quot;https://s3.amazonaws.com/aws-cli/awscli-bundle.zip&quot; -o &quot;awscli-bundle.zip&quot;
+</code></pre>
+
+<p>if you don&rsquo;t have curl installed install it!</p>
+
+<p>Then unzip the archive:</p>
+
+<pre><code>unzip awscli-bundle.zip
+</code></pre>
+
+<p>To install just do:</p>
+
+<pre><code>sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+</code></pre>
+
+<p>That is all, you now have aws-cli installed. Configuring and using it is another story for another post.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="http://ciprianturcu.comjs/slim.js"></script>
+  
+
+</body>
+
+</html>

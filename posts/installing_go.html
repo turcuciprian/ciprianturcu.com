@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Installing go (golang) on Ubuntu &middot; Ciprian Turcu&#39;s website </title>
+
+
+<link rel="stylesheet" href="http://ciprianturcu.comcss/slim.css">
+<link rel="stylesheet" href="http://ciprianturcu.comcss/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="../favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Ciprian Turcu&#39;s website" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://ciprianturcu.com">Ciprian Turcu&#39;s website</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+  
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://ciprianturcu.com/posts/installing_go.html">Installing go (golang) on Ubuntu</a></h2>
+        <div class="post-content">
+          
+
+<p>Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&rsquo;t, I got to a place where I Do these steps exactly and you should be fine.</p>
+
+<h3 id="here-s-how-i-did-it:1825c4268862d9442c9c2ec774afced1">Here&rsquo;s how I did it:</h3>
+
+<p>I went to:</p>
+
+<pre><code>https://golang.org
+</code></pre>
+
+<p>I clicked the Download Go Button that took me to this link:</p>
+
+<pre><code>https://golang.org/dl/
+</code></pre>
+
+<p>From the Linux button I clicked to download:</p>
+
+<pre><code>https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>You can also go in the terminal and to download it you do</p>
+
+<pre><code>wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>or</p>
+
+<pre><code>curl https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>When it finishes downloading, go inside the terminal to that path where you downloaded or if you downloaded via the terminal don&rsquo;t GO anywhere, you are where you&rsquo;re supposed to be, and do (to unpack) a</p>
+
+<pre><code>tar -zxvf go1.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>In my case the file name is go1.5.linux-amd64.tar.gz, It may change in time so be sure to change it accordingly, don&rsquo;t just copy and paste.</p>
+
+<p>great! Now copy (or move, I moved) the extracted directory in /usr/local/bin</p>
+
+<p>You can have it anywhere but let&rsquo;s just move it here.</p>
+
+<p>Don&rsquo;t forget to sudo:</p>
+
+<pre><code>sudo go/ /usr/local/bin
+</code></pre>
+
+<p>Update your enviroment variables, so that when you write &ldquo;go&rdquo; it loads the go app from where it sits.</p>
+
+<pre><code>export GOROOT=/usr/local/bin/go
+export PATH=$PATH:/usr/local/bin/go/bin
+</code></pre>
+
+<p>That is all, now if you just write in the terminal:</p>
+
+<pre><code>go version
+</code></pre>
+
+<p>That is all, you have all the weapons you need, now GO!</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="http://ciprianturcu.comjs/slim.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Using huGO &middot; Ciprian Turcu&#39;s website </title>
+
+
+<link rel="stylesheet" href="http://ciprianturcu.comcss/slim.css">
+<link rel="stylesheet" href="http://ciprianturcu.comcss/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="../favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Ciprian Turcu&#39;s website" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://ciprianturcu.com">Ciprian Turcu&#39;s website</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+  
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://ciprianturcu.com/posts/using-hugo.html">Using huGO</a></h2>
+        <div class="post-content">
+          
+
+<p>###Creating a site</p>
+
+<p>All you need to create a site is to go in the folder you want to create your site and write:</p>
+
+<pre><code>hugo new site site-name
+</code></pre>
+
+<p>instead of &ldquo;site-name&rdquo; you can use &ldquo;/path/to/site&rdquo;. The site name is going to be a directory. When ever you want to run HuGO commands for that site you need to be in the site root folder.</p>
+
+<p>###Configuring a bit</p>
+
+<p>Once you ran the above command, all the site files will be generated. Now we need to configure it. Let&rsquo;s say we want the domain of this to be your-website.com. To make HuGO generate for that particular website.website.
+To do this we need to edit config.toml that is in the root of the site.
+here you have to have this variable:</p>
+
+<pre><code>baseurl = &quot;http://your-site.com/&quot;
+</code></pre>
+
+<p>You can also set a site title:</p>
+
+<pre><code>title = &quot;Your Site title&quot;
+</code></pre>
+
+<p>You can set the theme:</p>
+
+<pre><code>theme = &quot;cactus&quot;
+</code></pre>
+
+<p>The theme name has to be the directory name in the root of the hugo site/themes/</p>
+
+<p>To download all the available themes for hugo run in the themes directory:</p>
+
+<pre><code>git remote add origin https://github.com/spf13/hugoThemes.git
+git pull origin master
+</code></pre>
+
+<p>And voila, you have all the themes in the themes directory</p>
+
+<p>You can set other parameters:</p>
+
+<pre><code>[params]
+  description = &quot;Site description goes here&quot;
+  author = &quot;Your full name&quot;
+  cover = &quot;images/cover.jpeg&quot;
+  logo = &quot;images/logo.jpeg&quot;
+  githubName = &quot;whatever&quot;
+  twitterName = &quot;whatever&quot;
+  facebookName = &quot;whatever&quot;
+</code></pre>
+
+<p>The images you place in content/images and they will be added to the theme in the compiled version of the theme in the images folder.</p>
+
+<h3 id="create-a-post:f289f7106c21a975bb9cbd3325d6b48b">Create a Post</h3>
+
+<p>To create a post just type:</p>
+
+<pre><code>hugo new posts/your-post-name.cmd
+</code></pre>
+
+<p>and then go to content/posts/your-post-name.md and edit that.</p>
+
+<p>In there you will have:</p>
+
+<pre><code>+++
+date = &quot;2015-08-26T01:23:01+03:00&quot;
+description = &quot;Your post description goes here&quot;
+title = &quot;Your post title goes here&quot;
+draft = true
++++
+
+Your post content goes here. Use markup language to style it
+</code></pre>
+
+<h3 id="create-a-page:f289f7106c21a975bb9cbd3325d6b48b">Create a page:</h3>
+
+<p>Just like post you do:</p>
+
+<pre><code>hugo new page/your-page-name.cmd
+</code></pre>
+
+<p>And that&rsquo;s a page not a post.</p>
+
+<p>This is pretty much it, the basics. More to come soon!</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="http://ciprianturcu.comjs/slim.js"></script>
+  
+
+</body>
+
+</html>

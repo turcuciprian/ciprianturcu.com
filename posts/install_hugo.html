@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Install HuGO &middot; Ciprian Turcu&#39;s website </title>
+
+
+<link rel="stylesheet" href="http://ciprianturcu.comcss/slim.css">
+<link rel="stylesheet" href="http://ciprianturcu.comcss/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="../favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Ciprian Turcu&#39;s website" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://ciprianturcu.com">Ciprian Turcu&#39;s website</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+  
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://ciprianturcu.com/posts/install_hugo.html">Install HuGO</a></h2>
+        <div class="post-content">
+          <p>What&rsquo;s ironic is that I&rsquo;m creating this page for Hugo to process and generate later. Here&rsquo;s how you install (in Ubuntu) Hugo.</p>
+
+<p>Jump to step 3 if you&rsquo;re doing this from the terminal.
+1. Go to :</p>
+
+<pre><code>https://gohugo.io/
+</code></pre>
+
+<p>Click &ldquo;Install&rdquo; and after it scrolls down click download.
+2. Scroll down and select:</p>
+
+<pre><code>hugo_0.14_linux_amd64.tar.gz
+</code></pre>
+
+<p>Or whatever version is *_linux_amd64.tar.gz
+3. To get this from the terminal:
+You can either:</p>
+
+<pre><code>wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
+</code></pre>
+
+<p>or</p>
+
+<pre><code>curl https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
+</code></pre>
+
+<p>This is of course depending on what you have installed/preffer.
+4. Unzip:</p>
+
+<pre><code>tar -zxvf hugo_0.14_linux_amd64.tar.gz
+</code></pre>
+
+<ol>
+<li>Rename
+<code>
+cd hugo_0.14_linux_amd64/
+mv hugo_0.14_linux_amd64 hugo
+</code></li>
+<li>Move
+<code>
+mv hugo /usr/local/bin/
+</code></li>
+</ol>
+
+<p>And there you have it. Now if you write anywhere:</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<p>You should get a hugo version and see it&rsquo;s working.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="http://ciprianturcu.comjs/slim.js"></script>
+  
+
+</body>
+
+</html>

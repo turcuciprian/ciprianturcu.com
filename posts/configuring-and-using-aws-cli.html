@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Configuring and using aws-cli &middot; Ciprian Turcu&#39;s website </title>
+
+
+<link rel="stylesheet" href="http://ciprianturcu.comcss/slim.css">
+<link rel="stylesheet" href="http://ciprianturcu.comcss/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="../favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Ciprian Turcu&#39;s website" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://ciprianturcu.com">Ciprian Turcu&#39;s website</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+  
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html">Configuring and using aws-cli</a></h2>
+        <div class="post-content">
+          
+
+<h3 id="configuring:a5fd603b5e436b44a31560128442cd9e">Configuring</h3>
+
+<p>Run</p>
+
+<pre><code>aws configure
+</code></pre>
+
+<p>This will ask you for the following keys:</p>
+
+<pre><code>AWS Access Key ID [None]:
+AWS Secret Access Key [None]:
+Default region name [None]:
+Default output format [None]: 
+</code></pre>
+
+<p>Create a new Access key and Secret Access key by going here <a href="https://console.aws.amazon.com/iam/home?#security_credential">https://console.aws.amazon.com/iam/home?#security_credential</a> and selecting Access Keys, create new access key and use those credentials.</p>
+
+<p>You have these regions and points:</p>
+
+<pre><code>US East (N. Virginia) -	us-east-1
+US West (Oregon) - us-west-2
+EU (Ireland)	eu-west-1
+</code></pre>
+
+<p>More you can find here: <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region">http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region</a></p>
+
+<p>For default autput format you can add text</p>
+
+<h3 id="using:a5fd603b5e436b44a31560128442cd9e">Using</h3>
+
+<p>After configuring, just go in your directory that you want to upload to the s3 bucket and do this command:</p>
+
+<pre><code>aws s3 sync . s3://bucket-name-goes-here
+</code></pre>
+
+<p>That should be it. If you want to delete files from the s3 bucket that where deleted locally when you sinc add &ndash;delete at the end of your command. Ex:</p>
+
+<pre><code>aws s3 sync . s3://bucket-name-goes-here --delete
+</code></pre>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="http://ciprianturcu.comjs/slim.js"></script>
+  
+
+</body>
+
+</html>
