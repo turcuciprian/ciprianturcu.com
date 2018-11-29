@@ -11,10 +11,10 @@
     
     <item>
       <title>Doxti, hugo and a personal project</title>
-      <link>http://ciprianturcu.com/posts/doxti,-hugo-and-a-personal-project.html</link>
+      <link>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</link>
       <pubDate>Thu, 29 Nov 2018 17:20:18 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/doxti,-hugo-and-a-personal-project.html</guid>
+      <guid>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</guid>
       <description>
 
 &lt;p&gt;A static site generator, &lt;strong&gt;&lt;em&gt;&lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt; and a personal project.A static site generator, doxti and a personal project. Are you getting it? these are not 3 separate things. This is one thing.
@@ -23,31 +23,31 @@ For the record, this is officially the first post I am writing in &lt;a href=&#3
 &lt;p&gt;Yes, I am using my own product to write this post. Cool heh?
 I will use it from now on as it is usable, will find bugs, listen to the other users, come up with features, continuously evolve it.&lt;/p&gt;
 
-&lt;h2 id=&#34;origins:5d1645328afdf8a8d807b5238bd08755&#34;&gt;Origins&lt;/h2&gt;
+&lt;h2 id=&#34;origins:5397fd7b679f52de350abfea3579f33c&#34;&gt;Origins&lt;/h2&gt;
 
 &lt;p&gt;A couple of years ago, a friend of mine told me about how static site generators are exploding and that there is a specific site generator that is crazy fast and very useful . He told me it was the future and he came up with an idea about how a UI for it, might be amazing. I was looking for a project to do and as he was trying to be a good friend and help, he laid out this idea and handed it to me.&lt;/p&gt;
 
 &lt;p&gt;So I did what any developer when given an awesome idea would do&amp;hellip; I started poking holes in it and started to develop excuses to why I cannot do it. And yes, I waited for 6 months before coming back to it and resuming the denial process. That continued for about 1.5 more years and I have transformed from a wordpress developer to a React developer with a dash of nodejs on the side.&lt;/p&gt;
 
-&lt;h2 id=&#34;it-s-time:5d1645328afdf8a8d807b5238bd08755&#34;&gt;It&amp;rsquo;s time!!!?&lt;/h2&gt;
+&lt;h2 id=&#34;it-s-time:5397fd7b679f52de350abfea3579f33c&#34;&gt;It&amp;rsquo;s time!!!?&lt;/h2&gt;
 
 &lt;p&gt;After convincing myself that there was not going to be a better product/service/project idea, Once I had the comfort of react and node under my belt, It was all clear to me exactly how and why I would do it. I started developing a plan, how I would build it, who the project is for, why I would do it like I wanted to do it, eventually how I would create a whole ecosystem around it.&lt;/p&gt;
 
 &lt;p&gt;Yes, understanding react as a library and all the components I have available, + nodeJs as a server, I began creating a &lt;code&gt;sketch&lt;/code&gt; of a HTML skeleton that would later be the dashboard of the application.&lt;/p&gt;
 
-&lt;h2 id=&#34;you-are-not-alone:5d1645328afdf8a8d807b5238bd08755&#34;&gt;You are not alone&lt;/h2&gt;
+&lt;h2 id=&#34;you-are-not-alone:5397fd7b679f52de350abfea3579f33c&#34;&gt;You are not alone&lt;/h2&gt;
 
 &lt;p&gt;Even though I started alone, after a short while, I had help.Having a helping hand in coding can make all the difference most of the time, any help is welcomed, even advice (people are full of that but some advice from certain people is actually good).&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://ioanachichernea.com&#34;&gt;My girlfriend&lt;/a&gt; was starting to learn React and Node too and this project was a perfect opportunity for her to learn and I would have an extra hand in the project. Since I was working full time I was not able to work at all at the project and when she had some downtime between jobs, she was able to focus 100% on it and helped immensely.&lt;/p&gt;
 
-&lt;h2 id=&#34;pivoting:5d1645328afdf8a8d807b5238bd08755&#34;&gt;Pivoting&lt;/h2&gt;
+&lt;h2 id=&#34;pivoting:5397fd7b679f52de350abfea3579f33c&#34;&gt;Pivoting&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt; started out as a self hosted project. It was supposed to be hosted on the computer of the user and everything would be under his/her control. That would mean I had to make sure that git and hugo where installed and it was easy for the user to install, the server code had to be perfect on any platform (wanted to make it for linux, windows and osx). While cross platform was not impossible (even though there where some challenges at first), everything was eventually starting to work. However, a &amp;ldquo;wordpress.org&amp;rdquo; package was not that easy to build and maintain, especially with the code all out in the open for developers to find holes in and break.&lt;/p&gt;
 
 &lt;p&gt;The question I asked myself was, &amp;ldquo;how is it better for the user?&amp;rdquo;. After thinking a bit and asking myself what does the user ultimately want, I came to the conclusion that I want to give access to &lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt; to as many people as I could. I didn&amp;rsquo;t want to exclude the non-techies, and I realised that the end result was the staticly generated site that was going to be done either way. So I pivoted the project to a service, instead of a self hosted solution.&lt;/p&gt;
 
-&lt;h2 id=&#34;so-what-is-doxti-http-doxti-com:5d1645328afdf8a8d807b5238bd08755&#34;&gt;So, what is &lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt; ?&lt;/h2&gt;
+&lt;h2 id=&#34;so-what-is-doxti-http-doxti-com:5397fd7b679f52de350abfea3579f33c&#34;&gt;So, what is &lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt; ?&lt;/h2&gt;
 
 &lt;p&gt;Like the original idea, it&amp;rsquo;s a UI that works with &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. But it&amp;rsquo;s more than that, it&amp;rsquo;s a service that allows you to create, manage and build static websites with &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. It&amp;rsquo;s a custom CMS for creating sites that will eventually evolve into a documentation generator with custom themes and who knows&amp;hellip;? We&amp;rsquo;ll see.&lt;/p&gt;
 </description>

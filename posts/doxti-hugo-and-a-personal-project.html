@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Doxti, hugo and a personal project &middot; Ciprian Turcu&#39;s website </title>
+
+
+<link rel="stylesheet" href="http://ciprianturcu.com/css/slim.css">
+<link rel="stylesheet" href="http://ciprianturcu.com/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="../favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Ciprian Turcu&#39;s website" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://ciprianturcu.com/">Ciprian Turcu&#39;s website</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+  
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html">Doxti, hugo and a personal project</a></h2>
+        <div class="post-content">
+          
+
+<p>A static site generator, <strong><em><a href="http://doxti.com">Doxti</a></em></strong> and a personal project.A static site generator, doxti and a personal project. Are you getting it? these are not 3 separate things. This is one thing.
+For the record, this is officially the first post I am writing in <a href="http://doxti.com">Doxti</a> , and will generate with doxti to publish to my site manually after.</p>
+
+<p>Yes, I am using my own product to write this post. Cool heh?
+I will use it from now on as it is usable, will find bugs, listen to the other users, come up with features, continuously evolve it.</p>
+
+<h2 id="origins:5397fd7b679f52de350abfea3579f33c">Origins</h2>
+
+<p>A couple of years ago, a friend of mine told me about how static site generators are exploding and that there is a specific site generator that is crazy fast and very useful . He told me it was the future and he came up with an idea about how a UI for it, might be amazing. I was looking for a project to do and as he was trying to be a good friend and help, he laid out this idea and handed it to me.</p>
+
+<p>So I did what any developer when given an awesome idea would do&hellip; I started poking holes in it and started to develop excuses to why I cannot do it. And yes, I waited for 6 months before coming back to it and resuming the denial process. That continued for about 1.5 more years and I have transformed from a wordpress developer to a React developer with a dash of nodejs on the side.</p>
+
+<h2 id="it-s-time:5397fd7b679f52de350abfea3579f33c">It&rsquo;s time!!!?</h2>
+
+<p>After convincing myself that there was not going to be a better product/service/project idea, Once I had the comfort of react and node under my belt, It was all clear to me exactly how and why I would do it. I started developing a plan, how I would build it, who the project is for, why I would do it like I wanted to do it, eventually how I would create a whole ecosystem around it.</p>
+
+<p>Yes, understanding react as a library and all the components I have available, + nodeJs as a server, I began creating a <code>sketch</code> of a HTML skeleton that would later be the dashboard of the application.</p>
+
+<h2 id="you-are-not-alone:5397fd7b679f52de350abfea3579f33c">You are not alone</h2>
+
+<p>Even though I started alone, after a short while, I had help.Having a helping hand in coding can make all the difference most of the time, any help is welcomed, even advice (people are full of that but some advice from certain people is actually good).</p>
+
+<p><a href="http://ioanachichernea.com">My girlfriend</a> was starting to learn React and Node too and this project was a perfect opportunity for her to learn and I would have an extra hand in the project. Since I was working full time I was not able to work at all at the project and when she had some downtime between jobs, she was able to focus 100% on it and helped immensely.</p>
+
+<h2 id="pivoting:5397fd7b679f52de350abfea3579f33c">Pivoting</h2>
+
+<p><a href="http://doxti.com">Doxti</a> started out as a self hosted project. It was supposed to be hosted on the computer of the user and everything would be under his/her control. That would mean I had to make sure that git and hugo where installed and it was easy for the user to install, the server code had to be perfect on any platform (wanted to make it for linux, windows and osx). While cross platform was not impossible (even though there where some challenges at first), everything was eventually starting to work. However, a &ldquo;wordpress.org&rdquo; package was not that easy to build and maintain, especially with the code all out in the open for developers to find holes in and break.</p>
+
+<p>The question I asked myself was, &ldquo;how is it better for the user?&rdquo;. After thinking a bit and asking myself what does the user ultimately want, I came to the conclusion that I want to give access to <a href="http://doxti.com">Doxti</a> to as many people as I could. I didn&rsquo;t want to exclude the non-techies, and I realised that the end result was the staticly generated site that was going to be done either way. So I pivoted the project to a service, instead of a self hosted solution.</p>
+
+<h2 id="so-what-is-doxti-http-doxti-com:5397fd7b679f52de350abfea3579f33c">So, what is <a href="http://doxti.com">Doxti</a> ?</h2>
+
+<p>Like the original idea, it&rsquo;s a UI that works with <a href="http://gohugo.io">Hugo</a>. But it&rsquo;s more than that, it&rsquo;s a service that allows you to create, manage and build static websites with <a href="http://gohugo.io">Hugo</a>. It&rsquo;s a custom CMS for creating sites that will eventually evolve into a documentation generator with custom themes and who knows&hellip;? We&rsquo;ll see.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="http://ciprianturcu.com/js/slim.js"></script>
+  
+
+</body>
+
+</html>
