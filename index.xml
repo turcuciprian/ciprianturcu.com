@@ -7,581 +7,113 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Nov 2018 17:20:18 +0000</lastBuildDate>
-    <atom:link href="http://ciprianturcu.com/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://ciprianturcu.com/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Doxti, hugo and a personal project</title>
-      <link>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</link>
+      <link>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project/</link>
       <pubDate>Thu, 29 Nov 2018 17:20:18 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</guid>
-      <description>
-
-&lt;p&gt;A static site generator, &lt;strong&gt;&lt;em&gt;&lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt; and a personal project.A static site generator, doxti and a personal project. Are you getting it? these are not 3 separate things. This is one thing.
-For the record, this is officially the first post I am writing in &lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt; , and will generate with doxti to publish to my site manually after.&lt;/p&gt;
-
-&lt;p&gt;Yes, I am using my own product to write this post. Cool heh?
-I will use it from now on as it is usable, will find bugs, listen to the other users, come up with features, continuously evolve it.&lt;/p&gt;
-
-&lt;h2 id=&#34;origins:5397fd7b679f52de350abfea3579f33c&#34;&gt;Origins&lt;/h2&gt;
-
-&lt;p&gt;A couple of years ago, a friend of mine told me about how static site generators are exploding and that there is a specific site generator that is crazy fast and very useful . He told me it was the future and he came up with an idea about how a UI for it, might be amazing. I was looking for a project to do and as he was trying to be a good friend and help, he laid out this idea and handed it to me.&lt;/p&gt;
-
-&lt;p&gt;So I did what any developer when given an awesome idea would do&amp;hellip; I started poking holes in it and started to develop excuses to why I cannot do it. And yes, I waited for 6 months before coming back to it and resuming the denial process. That continued for about 1.5 more years and I have transformed from a wordpress developer to a React developer with a dash of nodejs on the side.&lt;/p&gt;
-
-&lt;h2 id=&#34;it-s-time:5397fd7b679f52de350abfea3579f33c&#34;&gt;It&amp;rsquo;s time!!!?&lt;/h2&gt;
-
-&lt;p&gt;After convincing myself that there was not going to be a better product/service/project idea, Once I had the comfort of react and node under my belt, It was all clear to me exactly how and why I would do it. I started developing a plan, how I would build it, who the project is for, why I would do it like I wanted to do it, eventually how I would create a whole ecosystem around it.&lt;/p&gt;
-
-&lt;p&gt;Yes, understanding react as a library and all the components I have available, + nodeJs as a server, I began creating a &lt;code&gt;sketch&lt;/code&gt; of a HTML skeleton that would later be the dashboard of the application.&lt;/p&gt;
-
-&lt;h2 id=&#34;you-are-not-alone:5397fd7b679f52de350abfea3579f33c&#34;&gt;You are not alone&lt;/h2&gt;
-
-&lt;p&gt;Even though I started alone, after a short while, I had help.Having a helping hand in coding can make all the difference most of the time, any help is welcomed, even advice (people are full of that but some advice from certain people is actually good).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ioanachichernea.com&#34;&gt;My girlfriend&lt;/a&gt; was starting to learn React and Node too and this project was a perfect opportunity for her to learn and I would have an extra hand in the project. Since I was working full time I was not able to work at all at the project and when she had some downtime between jobs, she was able to focus 100% on it and helped immensely.&lt;/p&gt;
-
-&lt;h2 id=&#34;pivoting:5397fd7b679f52de350abfea3579f33c&#34;&gt;Pivoting&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt; started out as a self hosted project. It was supposed to be hosted on the computer of the user and everything would be under his/her control. That would mean I had to make sure that git and hugo where installed and it was easy for the user to install, the server code had to be perfect on any platform (wanted to make it for linux, windows and osx). While cross platform was not impossible (even though there where some challenges at first), everything was eventually starting to work. However, a &amp;ldquo;wordpress.org&amp;rdquo; package was not that easy to build and maintain, especially with the code all out in the open for developers to find holes in and break.&lt;/p&gt;
-
-&lt;p&gt;The question I asked myself was, &amp;ldquo;how is it better for the user?&amp;rdquo;. After thinking a bit and asking myself what does the user ultimately want, I came to the conclusion that I want to give access to &lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt; to as many people as I could. I didn&amp;rsquo;t want to exclude the non-techies, and I realised that the end result was the staticly generated site that was going to be done either way. So I pivoted the project to a service, instead of a self hosted solution.&lt;/p&gt;
-
-&lt;h2 id=&#34;so-what-is-doxti-http-doxti-com:5397fd7b679f52de350abfea3579f33c&#34;&gt;So, what is &lt;a href=&#34;http://doxti.com&#34;&gt;Doxti&lt;/a&gt; ?&lt;/h2&gt;
-
-&lt;p&gt;Like the original idea, it&amp;rsquo;s a UI that works with &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. But it&amp;rsquo;s more than that, it&amp;rsquo;s a service that allows you to create, manage and build static websites with &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. It&amp;rsquo;s a custom CMS for creating sites that will eventually evolve into a documentation generator with custom themes and who knows&amp;hellip;? We&amp;rsquo;ll see.&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project/</guid>
+      <description>A static site generator, Doxti and a personal project.A static site generator, doxti and a personal project. Are you getting it? these are not 3 separate things. This is one thing. For the record, this is officially the first post I am writing in Doxti , and will generate with doxti to publish to my site manually after.
+Yes, I am using my own product to write this post. Cool heh?</description>
     </item>
     
     <item>
       <title>Configuring and using aws-cli</title>
-      <link>http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</link>
+      <link>http://ciprianturcu.com/posts/configuring-and-using-aws-cli/</link>
       <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</guid>
-      <description>
-
-&lt;h3 id=&#34;configuring:a5fd603b5e436b44a31560128442cd9e&#34;&gt;Configuring&lt;/h3&gt;
-
-&lt;p&gt;Run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aws configure
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will ask you for the following keys:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;AWS Access Key ID [None]:
-AWS Secret Access Key [None]:
-Default region name [None]:
-Default output format [None]: 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Create a new Access key and Secret Access key by going here &lt;a href=&#34;https://console.aws.amazon.com/iam/home?#security_credential&#34;&gt;https://console.aws.amazon.com/iam/home?#security_credential&lt;/a&gt; and selecting Access Keys, create new access key and use those credentials.&lt;/p&gt;
-
-&lt;p&gt;You have these regions and points:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;US East (N. Virginia) -	us-east-1
-US West (Oregon) - us-west-2
-EU (Ireland)	eu-west-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More you can find here: &lt;a href=&#34;http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region&#34;&gt;http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;For default autput format you can add text&lt;/p&gt;
-
-&lt;h3 id=&#34;using:a5fd603b5e436b44a31560128442cd9e&#34;&gt;Using&lt;/h3&gt;
-
-&lt;p&gt;After configuring, just go in your directory that you want to upload to the s3 bucket and do this command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aws s3 sync . s3://bucket-name-goes-here
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That should be it. If you want to delete files from the s3 bucket that where deleted locally when you sinc add &amp;ndash;delete at the end of your command. Ex:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aws s3 sync . s3://bucket-name-goes-here --delete
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/configuring-and-using-aws-cli/</guid>
+      <description>Configuring Run
+aws configure  This will ask you for the following keys:
+AWS Access Key ID [None]: AWS Secret Access Key [None]: Default region name [None]: Default output format [None]:  Create a new Access key and Secret Access key by going here https://console.aws.amazon.com/iam/home?#security_credential and selecting Access Keys, create new access key and use those credentials.
+You have these regions and points:
+US East (N. Virginia) -	us-east-1 US West (Oregon) - us-west-2 EU (Ireland)	eu-west-1  More you can find here: http://docs.</description>
     </item>
     
     <item>
       <title>Installing and using s3cmd</title>
-      <link>http://ciprianturcu.com/posts/s3cmd.html</link>
+      <link>http://ciprianturcu.com/posts/s3cmd/</link>
       <pubDate>Fri, 28 Aug 2015 00:44:07 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/s3cmd.html</guid>
-      <description>
-
-&lt;h3 id=&#34;download:03c1f89e12ff30dc5360bc3a9c21e0b2&#34;&gt;Download&lt;/h3&gt;
-
-&lt;p&gt;Go to &lt;a href=&#34;http://sourceforge.net/projects/s3tools/files/s3cmd/&#34;&gt;http://sourceforge.net/projects/s3tools/files/s3cmd/&lt;/a&gt; , select the latest version folder and download the tar.gz file.
-Unzip it with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar -zxvf &amp;lt;filename&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;install:03c1f89e12ff30dc5360bc3a9c21e0b2&#34;&gt;Install&lt;/h3&gt;
-
-&lt;p&gt;First make sure you have python setup tools installed. To install run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install python-setuptools
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then go inside your unpacked previously directory and run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo python setup.py install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And that&amp;rsquo;s it for installing. Now configuring and using:&lt;/p&gt;
-
-&lt;h3 id=&#34;configuring:03c1f89e12ff30dc5360bc3a9c21e0b2&#34;&gt;Configuring&lt;/h3&gt;
-
-&lt;p&gt;To configure, run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;s3cmd --configure
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You will be prompted for Access key and Secret Key. These are crucial and you have to generate some. Go here: &lt;a href=&#34;https://console.aws.amazon.com/iam/home?#security_credential&#34;&gt;https://console.aws.amazon.com/iam/home?#security_credential&lt;/a&gt; to the Access Keys and press the Create New access Key button to create a new one. The copy and paste it in the comand line when you get prompted.&lt;/li&gt;
-&lt;li&gt;Then you will be asked for region, just hit enter.&lt;/li&gt;
-&lt;li&gt;Then Encryption password. Set what ever you want.&lt;/li&gt;
-&lt;li&gt;Path to GPG program, just hit enter.&lt;/li&gt;
-&lt;li&gt;Path to GPG program, just hit enter.&lt;/li&gt;
-&lt;li&gt;Save the changes Press Y and hit enter.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;pushing-files-to-bucket:03c1f89e12ff30dc5360bc3a9c21e0b2&#34;&gt;Pushing files to bucket&lt;/h3&gt;
-
-&lt;p&gt;All you&amp;rsquo;re left with now is to push files to your bucket. Here&amp;rsquo;s how you do it:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You go in the directory containing the files you want to push&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;s3cmd put * s3://bucket-name/path -r --continue-put
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This checkes each file&amp;rsquo;s md5 and file size and skips them if they are different.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;is for everything
--r is for recursive
-&amp;ndash;continue-put is only uploading files that don&amp;rsquo;t exist or have the size or MD5 different on the server&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;For a faster run do&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;s3cmd sync ./  s3://bucket-name/path
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That&amp;rsquo;s all, fwew, go have some coffee&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/s3cmd/</guid>
+      <description>Download Go to http://sourceforge.net/projects/s3tools/files/s3cmd/ , select the latest version folder and download the tar.gz file. Unzip it with
+tar -zxvf &amp;lt;filename&amp;gt;  Install First make sure you have python setup tools installed. To install run:
+sudo apt-get install python-setuptools  Then go inside your unpacked previously directory and run:
+sudo python setup.py install  And that&amp;rsquo;s it for installing. Now configuring and using:
+Configuring To configure, run:
+s3cmd --configure   You will be prompted for Access key and Secret Key.</description>
     </item>
     
     <item>
       <title>Useful Git commands</title>
-      <link>http://ciprianturcu.com/posts/git_usefulness.html</link>
+      <link>http://ciprianturcu.com/posts/git_usefulness/</link>
       <pubDate>Thu, 27 Aug 2015 23:32:45 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/git_usefulness.html</guid>
-      <description>
-
-&lt;h3 id=&#34;initialize-git-in-a-working-directory:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Initialize git in a working directory&lt;/h3&gt;
-
-&lt;p&gt;So you have a directory where you want to set up git in. You cd into that directory and you do&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git init
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That&amp;rsquo;s all it takes to have git initialized in that directory.&lt;/p&gt;
-
-&lt;h3 id=&#34;connect-to-a-remote-repository:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Connect to a remote repository&lt;/h3&gt;
-
-&lt;p&gt;Now what you want is to connect that git instance to a remote branch. To do this run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git remote add origin &amp;lt;URL&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you&amp;rsquo;re connected to a remote repo.Next you need to pull down the content from the repository.
-To do this run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git pull origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Basically git pull is a git fetch and a git merge. More information here: &lt;a href=&#34;http://git-scm.com/docs/git-pull&#34;&gt;http://git-scm.com/docs/git-pull&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;add-commit-push:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Add, Commit, Push&lt;/h3&gt;
-
-&lt;p&gt;Once you modified a file, created one or deleted one, you need to let your remote branch know of the chage and push that change. To do so First you need to add your change. Run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git add .
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Where . just adds everything in that tree.
-For a complete list of commands see: &lt;a href=&#34;http://git-scm.com/docs/git-add&#34;&gt;http://git-scm.com/docs/git-add&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then you can check your soon to be commit with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git status
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This one has options too. Available here: &lt;a href=&#34;http://git-scm.com/docs/git-status&#34;&gt;http://git-scm.com/docs/git-status&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then you do a commit:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git commit -a -m &amp;quot;Your message goes here&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;-a commits all the files that have been told to git about in the previous add . command
--m is for the commit message
-More commands here: &lt;a href=&#34;http://git-scm.com/docs/git-commit&#34;&gt;http://git-scm.com/docs/git-commit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And then you push:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Where you are pushing to the master remote branch the local origin branch.&lt;/p&gt;
-
-&lt;h3 id=&#34;git-branching:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Git branching&lt;/h3&gt;
-
-&lt;p&gt;To create a branch do&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git branch branchname
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You have to be in the branch you want to duplicate. So if you&amp;rsquo;re in master you do the above command to branch master.&lt;/p&gt;
-
-&lt;p&gt;Then you need to switch to that branch&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;branch checkout branchname
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;At this point you switched from what ever branch you where in, to this one. Now the changes in the previous branch are gone, you only have the changes in the branch. checkout is like the cd of git. More commands here: &lt;a href=&#34;http://git-scm.com/docs/git-checkout&#34;&gt;http://git-scm.com/docs/git-checkout&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You can checkout brances or even commits.&lt;/p&gt;
-
-&lt;h3 id=&#34;reseting:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Reseting&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;git reset --hard
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;ndash;hard
-Resets the index and working tree. Any changes to tracked files in the working tree since &lt;commit&gt; are discarded.&lt;/p&gt;
-
-&lt;p&gt;&amp;ndash;merge
-Resets the index and updates the files in the working tree that are different between &lt;commit&gt; and HEAD, but keeps those which are
-different between the index and working tree (i.e. which have changes which have not been added). If a file that is different between &lt;commit&gt; and the index has unstaged changes, reset is aborted.
-More information here: &lt;a href=&#34;http://git-scm.com/docs/git-reset&#34;&gt;http://git-scm.com/docs/git-reset&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;revert:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Revert&lt;/h3&gt;
-
-&lt;p&gt;If you want to revert to a specific commit all you have to do is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git revert &amp;lt;commit-code&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More information here: &lt;a href=&#34;http://git-scm.com/docs/git-revert&#34;&gt;http://git-scm.com/docs/git-revert&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/git_usefulness/</guid>
+      <description>Initialize git in a working directory So you have a directory where you want to set up git in. You cd into that directory and you do
+git init  That&amp;rsquo;s all it takes to have git initialized in that directory.
+Connect to a remote repository Now what you want is to connect that git instance to a remote branch. To do this run:
+git remote add origin &amp;lt;URL&amp;gt;  Now you&amp;rsquo;re connected to a remote repo.</description>
     </item>
     
     <item>
       <title>Using huGO</title>
-      <link>http://ciprianturcu.com/posts/using-hugo.html</link>
+      <link>http://ciprianturcu.com/posts/using-hugo/</link>
       <pubDate>Thu, 27 Aug 2015 06:56:31 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/using-hugo.html</guid>
-      <description>
-
-&lt;p&gt;###Creating a site&lt;/p&gt;
-
-&lt;p&gt;All you need to create a site is to go in the folder you want to create your site and write:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new site site-name
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;instead of &amp;ldquo;site-name&amp;rdquo; you can use &amp;ldquo;/path/to/site&amp;rdquo;. The site name is going to be a directory. When ever you want to run HuGO commands for that site you need to be in the site root folder.&lt;/p&gt;
-
-&lt;p&gt;###Configuring a bit&lt;/p&gt;
-
-&lt;p&gt;Once you ran the above command, all the site files will be generated. Now we need to configure it. Let&amp;rsquo;s say we want the domain of this to be your-website.com. To make HuGO generate for that particular website.website.
-To do this we need to edit config.toml that is in the root of the site.
-here you have to have this variable:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://your-site.com/&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can also set a site title:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;title = &amp;quot;Your Site title&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can set the theme:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;theme = &amp;quot;cactus&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The theme name has to be the directory name in the root of the hugo site/themes/&lt;/p&gt;
-
-&lt;p&gt;To download all the available themes for hugo run in the themes directory:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git remote add origin https://github.com/spf13/hugoThemes.git
-git pull origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And voila, you have all the themes in the themes directory&lt;/p&gt;
-
-&lt;p&gt;You can set other parameters:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[params]
-  description = &amp;quot;Site description goes here&amp;quot;
-  author = &amp;quot;Your full name&amp;quot;
-  cover = &amp;quot;images/cover.jpeg&amp;quot;
-  logo = &amp;quot;images/logo.jpeg&amp;quot;
-  githubName = &amp;quot;whatever&amp;quot;
-  twitterName = &amp;quot;whatever&amp;quot;
-  facebookName = &amp;quot;whatever&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The images you place in content/images and they will be added to the theme in the compiled version of the theme in the images folder.&lt;/p&gt;
-
-&lt;h3 id=&#34;create-a-post:f289f7106c21a975bb9cbd3325d6b48b&#34;&gt;Create a Post&lt;/h3&gt;
-
-&lt;p&gt;To create a post just type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new posts/your-post-name.cmd
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and then go to content/posts/your-post-name.md and edit that.&lt;/p&gt;
-
-&lt;p&gt;In there you will have:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;+++
-date = &amp;quot;2015-08-26T01:23:01+03:00&amp;quot;
-description = &amp;quot;Your post description goes here&amp;quot;
-title = &amp;quot;Your post title goes here&amp;quot;
-draft = true
-+++
-
-Your post content goes here. Use markup language to style it
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;create-a-page:f289f7106c21a975bb9cbd3325d6b48b&#34;&gt;Create a page:&lt;/h3&gt;
-
-&lt;p&gt;Just like post you do:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new page/your-page-name.cmd
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And that&amp;rsquo;s a page not a post.&lt;/p&gt;
-
-&lt;p&gt;This is pretty much it, the basics. More to come soon!&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/using-hugo/</guid>
+      <description>###Creating a site
+All you need to create a site is to go in the folder you want to create your site and write:
+hugo new site site-name  instead of &amp;ldquo;site-name&amp;rdquo; you can use &amp;ldquo;/path/to/site&amp;rdquo;. The site name is going to be a directory. When ever you want to run HuGO commands for that site you need to be in the site root folder.
+###Configuring a bit
+Once you ran the above command, all the site files will be generated.</description>
     </item>
     
     <item>
       <title>Install HuGO</title>
-      <link>http://ciprianturcu.com/posts/install_hugo.html</link>
+      <link>http://ciprianturcu.com/posts/install_hugo/</link>
       <pubDate>Wed, 26 Aug 2015 04:46:33 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/install_hugo.html</guid>
-      <description>&lt;p&gt;What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.&lt;/p&gt;
-
-&lt;p&gt;Jump to step 3 if you&amp;rsquo;re doing this from the terminal.
-1. Go to :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://gohugo.io/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download.
-2. Scroll down and select:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo_0.14_linux_amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Or whatever version is *_linux_amd64.tar.gz
-3. To get this from the terminal:
-You can either:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is of course depending on what you have installed/preffer.
-4. Unzip:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar -zxvf hugo_0.14_linux_amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Rename
-&lt;code&gt;
-cd hugo_0.14_linux_amd64/
-mv hugo_0.14_linux_amd64 hugo
-&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Move
-&lt;code&gt;
-mv hugo /usr/local/bin/
-&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;And there you have it. Now if you write anywhere:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo version
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You should get a hugo version and see it&amp;rsquo;s working.&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/install_hugo/</guid>
+      <description>What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.
+Jump to step 3 if you&amp;rsquo;re doing this from the terminal. 1. Go to :
+https://gohugo.io/  Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download. 2. Scroll down and select:
+hugo_0.14_linux_amd64.tar.gz  Or whatever version is *_linux_amd64.tar.gz 3. To get this from the terminal: You can either:</description>
     </item>
     
     <item>
       <title>Installing go (golang) on Ubuntu</title>
-      <link>http://ciprianturcu.com/posts/installing_go.html</link>
+      <link>http://ciprianturcu.com/posts/installing_go/</link>
       <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/installing_go.html</guid>
-      <description>
-
-&lt;p&gt;Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&amp;rsquo;t, I got to a place where I Do these steps exactly and you should be fine.&lt;/p&gt;
-
-&lt;h3 id=&#34;here-s-how-i-did-it:1825c4268862d9442c9c2ec774afced1&#34;&gt;Here&amp;rsquo;s how I did it:&lt;/h3&gt;
-
-&lt;p&gt;I went to:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://golang.org
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I clicked the Download Go Button that took me to this link:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://golang.org/dl/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;From the Linux button I clicked to download:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can also go in the terminal and to download it you do&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When it finishes downloading, go inside the terminal to that path where you downloaded or if you downloaded via the terminal don&amp;rsquo;t GO anywhere, you are where you&amp;rsquo;re supposed to be, and do (to unpack) a&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar -zxvf go1.5.linux-amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In my case the file name is go1.5.linux-amd64.tar.gz, It may change in time so be sure to change it accordingly, don&amp;rsquo;t just copy and paste.&lt;/p&gt;
-
-&lt;p&gt;great! Now copy (or move, I moved) the extracted directory in /usr/local/bin&lt;/p&gt;
-
-&lt;p&gt;You can have it anywhere but let&amp;rsquo;s just move it here.&lt;/p&gt;
-
-&lt;p&gt;Don&amp;rsquo;t forget to sudo:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo go/ /usr/local/bin
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Update your enviroment variables, so that when you write &amp;ldquo;go&amp;rdquo; it loads the go app from where it sits.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export GOROOT=/usr/local/bin/go
-export PATH=$PATH:/usr/local/bin/go/bin
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That is all, now if you just write in the terminal:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;go version
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That is all, you have all the weapons you need, now GO!&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/installing_go/</guid>
+      <description>Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&amp;rsquo;t, I got to a place where I Do these steps exactly and you should be fine.
+Here&amp;rsquo;s how I did it: I went to:</description>
     </item>
     
     <item>
       <title>Install Amazon S3 AWS-cli</title>
-      <link>http://ciprianturcu.com/posts/install_aws-cli.html</link>
+      <link>http://ciprianturcu.com/posts/install_aws-cli/</link>
       <pubDate>Wed, 26 Aug 2015 01:23:01 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/install_aws-cli.html</guid>
-      <description>
-
-&lt;h3 id=&#34;what-is-aws-cli:afd5bca8c26701bcade19257fb233fa1&#34;&gt;What is AWS-cli?&lt;/h3&gt;
-
-&lt;p&gt;AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.&lt;/p&gt;
-
-&lt;h3 id=&#34;how-do-i-install-it:afd5bca8c26701bcade19257fb233fa1&#34;&gt;How do I install it?&lt;/h3&gt;
-
-&lt;p&gt;Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;python --version
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then Download the installer:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl &amp;quot;https://s3.amazonaws.com/aws-cli/awscli-bundle.zip&amp;quot; -o &amp;quot;awscli-bundle.zip&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;if you don&amp;rsquo;t have curl installed install it!&lt;/p&gt;
-
-&lt;p&gt;Then unzip the archive:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;unzip awscli-bundle.zip
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To install just do:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That is all, you now have aws-cli installed. Configuring and using it is another story for another post.&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/install_aws-cli/</guid>
+      <description>What is AWS-cli? AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.
+How do I install it? Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version
+python --version  Then Download the installer:</description>
     </item>
     
     <item>
       <title>Hello dog!</title>
-      <link>http://ciprianturcu.com/posts/hello-world.html</link>
+      <link>http://ciprianturcu.com/posts/hello-world/</link>
       <pubDate>Tue, 25 Aug 2015 02:22:30 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/hello-world.html</guid>
-      <description>
-
-&lt;h3 id=&#34;what:aa77bbfd89a7b0ff10def205b9c08d51&#34;&gt;What?&lt;/h3&gt;
-
-&lt;p&gt;Hello Dog is the new Hello World. This is my blog and this is obviously the first post. I am GOing to try and document some stuff here, mostly technical, about my findings, things that I try not to forget. Ever.&lt;/p&gt;
-
-&lt;h3 id=&#34;hi-there:aa77bbfd89a7b0ff10def205b9c08d51&#34;&gt;Hi there!&lt;/h3&gt;
-
-&lt;p&gt;Welcome to my blog. This is a totally new direction that I am trying to GO in with my website and I&amp;rsquo;m trying out something new.&lt;/p&gt;
-
-&lt;p&gt;This Theme may look like a ghost theme, but this is actually HTML, Generated with Hugo &lt;a href=&#34;https://gohugo.io&#34;&gt;https://gohugo.io&lt;/a&gt;,  hosted on Amazon S3. Nothing too special if you know what I&amp;rsquo;m talking about.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to try to play with hugo while maintaining this blog. Right now it&amp;rsquo;s the ghost theme. In the future, we shall see.&lt;/p&gt;
-
-&lt;p&gt;Anyway, apparently the text is markdown, all of this is markdown. Here&amp;rsquo;s a markdown cheetsheet &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/a&gt; This might be useful later&lt;/p&gt;
-
-&lt;h3 id=&#34;todo-s:aa77bbfd89a7b0ff10def205b9c08d51&#34;&gt;Todo&amp;rsquo;s&lt;/h3&gt;
-
-&lt;p&gt;I want to try and accomplish something with this website, and that is, like I said above, documenting and posting updates on how certain stuff is done, tutorials, etc.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a list of stuff I want to post in the near future.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Installing GO&lt;/li&gt;
-&lt;li&gt;Installing Hugo&lt;/li&gt;
-&lt;li&gt;Running Hugo (golang) - (a deeper look, more explanations)&lt;/li&gt;
-&lt;li&gt;Developing in go, Basics&lt;/li&gt;
-&lt;li&gt;Creating menus in Hug&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/hello-world/</guid>
+      <description>What? Hello Dog is the new Hello World. This is my blog and this is obviously the first post. I am GOing to try and document some stuff here, mostly technical, about my findings, things that I try not to forget. Ever.
+Hi there! Welcome to my blog. This is a totally new direction that I am trying to GO in with my website and I&amp;rsquo;m trying out something new.</description>
     </item>
     
   </channel>

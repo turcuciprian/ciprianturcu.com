@@ -2,118 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basics on Ciprian Turcu&#39;s website</title>
-    <link>http://ciprianturcu.com/tags/basics.html</link>
+    <link>http://ciprianturcu.com/tags/basics/</link>
     <description>Recent content in Basics on Ciprian Turcu&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Aug 2015 23:32:45 +0300</lastBuildDate>
-    <atom:link href="http://ciprianturcu.com/tags/basics.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://ciprianturcu.com/tags/basics/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Useful Git commands</title>
-      <link>http://ciprianturcu.com/posts/git_usefulness.html</link>
+      <link>http://ciprianturcu.com/posts/git_usefulness/</link>
       <pubDate>Thu, 27 Aug 2015 23:32:45 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/git_usefulness.html</guid>
-      <description>
-
-&lt;h3 id=&#34;initialize-git-in-a-working-directory:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Initialize git in a working directory&lt;/h3&gt;
-
-&lt;p&gt;So you have a directory where you want to set up git in. You cd into that directory and you do&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git init
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That&amp;rsquo;s all it takes to have git initialized in that directory.&lt;/p&gt;
-
-&lt;h3 id=&#34;connect-to-a-remote-repository:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Connect to a remote repository&lt;/h3&gt;
-
-&lt;p&gt;Now what you want is to connect that git instance to a remote branch. To do this run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git remote add origin &amp;lt;URL&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you&amp;rsquo;re connected to a remote repo.Next you need to pull down the content from the repository.
-To do this run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git pull origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Basically git pull is a git fetch and a git merge. More information here: &lt;a href=&#34;http://git-scm.com/docs/git-pull&#34;&gt;http://git-scm.com/docs/git-pull&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;add-commit-push:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Add, Commit, Push&lt;/h3&gt;
-
-&lt;p&gt;Once you modified a file, created one or deleted one, you need to let your remote branch know of the chage and push that change. To do so First you need to add your change. Run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git add .
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Where . just adds everything in that tree.
-For a complete list of commands see: &lt;a href=&#34;http://git-scm.com/docs/git-add&#34;&gt;http://git-scm.com/docs/git-add&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then you can check your soon to be commit with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git status
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This one has options too. Available here: &lt;a href=&#34;http://git-scm.com/docs/git-status&#34;&gt;http://git-scm.com/docs/git-status&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then you do a commit:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git commit -a -m &amp;quot;Your message goes here&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;-a commits all the files that have been told to git about in the previous add . command
--m is for the commit message
-More commands here: &lt;a href=&#34;http://git-scm.com/docs/git-commit&#34;&gt;http://git-scm.com/docs/git-commit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And then you push:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Where you are pushing to the master remote branch the local origin branch.&lt;/p&gt;
-
-&lt;h3 id=&#34;git-branching:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Git branching&lt;/h3&gt;
-
-&lt;p&gt;To create a branch do&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git branch branchname
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You have to be in the branch you want to duplicate. So if you&amp;rsquo;re in master you do the above command to branch master.&lt;/p&gt;
-
-&lt;p&gt;Then you need to switch to that branch&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;branch checkout branchname
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;At this point you switched from what ever branch you where in, to this one. Now the changes in the previous branch are gone, you only have the changes in the branch. checkout is like the cd of git. More commands here: &lt;a href=&#34;http://git-scm.com/docs/git-checkout&#34;&gt;http://git-scm.com/docs/git-checkout&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You can checkout brances or even commits.&lt;/p&gt;
-
-&lt;h3 id=&#34;reseting:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Reseting&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;git reset --hard
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;ndash;hard
-Resets the index and working tree. Any changes to tracked files in the working tree since &lt;commit&gt; are discarded.&lt;/p&gt;
-
-&lt;p&gt;&amp;ndash;merge
-Resets the index and updates the files in the working tree that are different between &lt;commit&gt; and HEAD, but keeps those which are
-different between the index and working tree (i.e. which have changes which have not been added). If a file that is different between &lt;commit&gt; and the index has unstaged changes, reset is aborted.
-More information here: &lt;a href=&#34;http://git-scm.com/docs/git-reset&#34;&gt;http://git-scm.com/docs/git-reset&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;revert:f997dc66d40ba179da8e5ae85c4e158d&#34;&gt;Revert&lt;/h3&gt;
-
-&lt;p&gt;If you want to revert to a specific commit all you have to do is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git revert &amp;lt;commit-code&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More information here: &lt;a href=&#34;http://git-scm.com/docs/git-revert&#34;&gt;http://git-scm.com/docs/git-revert&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/git_usefulness/</guid>
+      <description>Initialize git in a working directory So you have a directory where you want to set up git in. You cd into that directory and you do
+git init  That&amp;rsquo;s all it takes to have git initialized in that directory.
+Connect to a remote repository Now what you want is to connect that git instance to a remote branch. To do this run:
+git remote add origin &amp;lt;URL&amp;gt;  Now you&amp;rsquo;re connected to a remote repo.</description>
     </item>
     
   </channel>

@@ -2,79 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Ciprian Turcu&#39;s website</title>
-    <link>http://ciprianturcu.com/categories/go.html</link>
+    <link>http://ciprianturcu.com/categories/go/</link>
     <description>Recent content in Go on Ciprian Turcu&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Aug 2015 02:01:23 +0300</lastBuildDate>
-    <atom:link href="http://ciprianturcu.com/categories/go.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://ciprianturcu.com/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Installing go (golang) on Ubuntu</title>
-      <link>http://ciprianturcu.com/posts/installing_go.html</link>
+      <link>http://ciprianturcu.com/posts/installing_go/</link>
       <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/installing_go.html</guid>
-      <description>
-
-&lt;p&gt;Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&amp;rsquo;t, I got to a place where I Do these steps exactly and you should be fine.&lt;/p&gt;
-
-&lt;h3 id=&#34;here-s-how-i-did-it:1825c4268862d9442c9c2ec774afced1&#34;&gt;Here&amp;rsquo;s how I did it:&lt;/h3&gt;
-
-&lt;p&gt;I went to:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://golang.org
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I clicked the Download Go Button that took me to this link:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://golang.org/dl/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;From the Linux button I clicked to download:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can also go in the terminal and to download it you do&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When it finishes downloading, go inside the terminal to that path where you downloaded or if you downloaded via the terminal don&amp;rsquo;t GO anywhere, you are where you&amp;rsquo;re supposed to be, and do (to unpack) a&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar -zxvf go1.5.linux-amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In my case the file name is go1.5.linux-amd64.tar.gz, It may change in time so be sure to change it accordingly, don&amp;rsquo;t just copy and paste.&lt;/p&gt;
-
-&lt;p&gt;great! Now copy (or move, I moved) the extracted directory in /usr/local/bin&lt;/p&gt;
-
-&lt;p&gt;You can have it anywhere but let&amp;rsquo;s just move it here.&lt;/p&gt;
-
-&lt;p&gt;Don&amp;rsquo;t forget to sudo:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo go/ /usr/local/bin
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Update your enviroment variables, so that when you write &amp;ldquo;go&amp;rdquo; it loads the go app from where it sits.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export GOROOT=/usr/local/bin/go
-export PATH=$PATH:/usr/local/bin/go/bin
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That is all, now if you just write in the terminal:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;go version
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That is all, you have all the weapons you need, now GO!&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/installing_go/</guid>
+      <description>Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&amp;rsquo;t, I got to a place where I Do these steps exactly and you should be fine.
+Here&amp;rsquo;s how I did it: I went to:</description>
     </item>
     
   </channel>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Ciprian Turcu&#39;s website  | Installing go (golang) on Ubuntu</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.52" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.955516233bcafa4d2a1c13cea63c7b50.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Installing go (golang) on Ubuntu" />
+<meta property="og:description" content="Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&rsquo;t, I got to a place where I Do these steps exactly and you should be fine.
+Here&rsquo;s how I did it: I went to:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://ciprianturcu.com/posts/installing_go/" /><meta property="article:published_time" content="2015-08-26T02:01:23&#43;03:00"/>
+<meta property="article:modified_time" content="2015-08-26T02:01:23&#43;03:00"/>
+
+<meta itemprop="name" content="Installing go (golang) on Ubuntu">
+<meta itemprop="description" content="Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&rsquo;t, I got to a place where I Do these steps exactly and you should be fine.
+Here&rsquo;s how I did it: I went to:">
+
+
+<meta itemprop="datePublished" content="2015-08-26T02:01:23&#43;03:00" />
+<meta itemprop="dateModified" content="2015-08-26T02:01:23&#43;03:00" />
+<meta itemprop="wordCount" content="257">
+
+
+
+<meta itemprop="keywords" content="Linux,Console,Go,Install,Terminal," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Installing go (golang) on Ubuntu"/>
+<meta name="twitter:description" content="Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&rsquo;t, I got to a place where I Do these steps exactly and you should be fine.
+Here&rsquo;s how I did it: I went to:"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://ciprianturcu.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Ciprian Turcu&#39;s website
+    </a>
+    <div class="flex-l items-center">
+      
+      
+<div hidden>
+  <span id="new-window-0">Opens in a new window</span>
+  <span id="new-window-1">Opens an external site</span>
+  <span id="new-window-2">Opens an external site in a new window</span>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Installing go (golang) on Ubuntu</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2015-08-26T02:01:23&#43;03:00">August 26, 2015</time>      
+      
+      
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<p>Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&rsquo;t, I got to a place where I Do these steps exactly and you should be fine.</p>
+
+<h3 id="here-s-how-i-did-it">Here&rsquo;s how I did it:</h3>
+
+<p>I went to:</p>
+
+<pre><code>https://golang.org
+</code></pre>
+
+<p>I clicked the Download Go Button that took me to this link:</p>
+
+<pre><code>https://golang.org/dl/
+</code></pre>
+
+<p>From the Linux button I clicked to download:</p>
+
+<pre><code>https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>You can also go in the terminal and to download it you do</p>
+
+<pre><code>wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>or</p>
+
+<pre><code>curl https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>When it finishes downloading, go inside the terminal to that path where you downloaded or if you downloaded via the terminal don&rsquo;t GO anywhere, you are where you&rsquo;re supposed to be, and do (to unpack) a</p>
+
+<pre><code>tar -zxvf go1.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>In my case the file name is go1.5.linux-amd64.tar.gz, It may change in time so be sure to change it accordingly, don&rsquo;t just copy and paste.</p>
+
+<p>great! Now copy (or move, I moved) the extracted directory in /usr/local/bin</p>
+
+<p>You can have it anywhere but let&rsquo;s just move it here.</p>
+
+<p>Don&rsquo;t forget to sudo:</p>
+
+<pre><code>sudo go/ /usr/local/bin
+</code></pre>
+
+<p>Update your enviroment variables, so that when you write &ldquo;go&rdquo; it loads the go app from where it sits.</p>
+
+<pre><code>export GOROOT=/usr/local/bin/go
+export PATH=$PATH:/usr/local/bin/go/bin
+</code></pre>
+
+<p>That is all, now if you just write in the terminal:</p>
+
+<pre><code>go version
+</code></pre>
+
+<p>That is all, you have all the weapons you need, now GO!</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Linux</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/console" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Console</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/go" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Go</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/install" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Install</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/terminal" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Terminal</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/install_aws-cli/">Install Amazon S3 AWS-cli</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://ciprianturcu.com/" >
+    &copy; 2018 Ciprian Turcu&#39;s website
+  </a>
+    <div>
+<div hidden>
+  <span id="new-window-0">Opens in a new window</span>
+  <span id="new-window-1">Opens an external site</span>
+  <span id="new-window-2">Opens an external site in a new window</span>
+</div>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

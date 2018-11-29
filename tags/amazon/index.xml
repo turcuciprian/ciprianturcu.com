@@ -2,101 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Amazon on Ciprian Turcu&#39;s website</title>
-    <link>http://ciprianturcu.com/tags/amazon.html</link>
+    <link>http://ciprianturcu.com/tags/amazon/</link>
     <description>Recent content in Amazon on Ciprian Turcu&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Sep 2015 12:50:09 +0300</lastBuildDate>
-    <atom:link href="http://ciprianturcu.com/tags/amazon.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://ciprianturcu.com/tags/amazon/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Configuring and using aws-cli</title>
-      <link>http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</link>
+      <link>http://ciprianturcu.com/posts/configuring-and-using-aws-cli/</link>
       <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</guid>
-      <description>
-
-&lt;h3 id=&#34;configuring:a5fd603b5e436b44a31560128442cd9e&#34;&gt;Configuring&lt;/h3&gt;
-
-&lt;p&gt;Run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aws configure
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will ask you for the following keys:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;AWS Access Key ID [None]:
-AWS Secret Access Key [None]:
-Default region name [None]:
-Default output format [None]: 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Create a new Access key and Secret Access key by going here &lt;a href=&#34;https://console.aws.amazon.com/iam/home?#security_credential&#34;&gt;https://console.aws.amazon.com/iam/home?#security_credential&lt;/a&gt; and selecting Access Keys, create new access key and use those credentials.&lt;/p&gt;
-
-&lt;p&gt;You have these regions and points:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;US East (N. Virginia) -	us-east-1
-US West (Oregon) - us-west-2
-EU (Ireland)	eu-west-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More you can find here: &lt;a href=&#34;http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region&#34;&gt;http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;For default autput format you can add text&lt;/p&gt;
-
-&lt;h3 id=&#34;using:a5fd603b5e436b44a31560128442cd9e&#34;&gt;Using&lt;/h3&gt;
-
-&lt;p&gt;After configuring, just go in your directory that you want to upload to the s3 bucket and do this command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aws s3 sync . s3://bucket-name-goes-here
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That should be it. If you want to delete files from the s3 bucket that where deleted locally when you sinc add &amp;ndash;delete at the end of your command. Ex:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aws s3 sync . s3://bucket-name-goes-here --delete
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/configuring-and-using-aws-cli/</guid>
+      <description>Configuring Run
+aws configure  This will ask you for the following keys:
+AWS Access Key ID [None]: AWS Secret Access Key [None]: Default region name [None]: Default output format [None]:  Create a new Access key and Secret Access key by going here https://console.aws.amazon.com/iam/home?#security_credential and selecting Access Keys, create new access key and use those credentials.
+You have these regions and points:
+US East (N. Virginia) -	us-east-1 US West (Oregon) - us-west-2 EU (Ireland)	eu-west-1  More you can find here: http://docs.</description>
     </item>
     
     <item>
       <title>Install Amazon S3 AWS-cli</title>
-      <link>http://ciprianturcu.com/posts/install_aws-cli.html</link>
+      <link>http://ciprianturcu.com/posts/install_aws-cli/</link>
       <pubDate>Wed, 26 Aug 2015 01:23:01 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/install_aws-cli.html</guid>
-      <description>
-
-&lt;h3 id=&#34;what-is-aws-cli:afd5bca8c26701bcade19257fb233fa1&#34;&gt;What is AWS-cli?&lt;/h3&gt;
-
-&lt;p&gt;AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.&lt;/p&gt;
-
-&lt;h3 id=&#34;how-do-i-install-it:afd5bca8c26701bcade19257fb233fa1&#34;&gt;How do I install it?&lt;/h3&gt;
-
-&lt;p&gt;Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;python --version
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then Download the installer:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl &amp;quot;https://s3.amazonaws.com/aws-cli/awscli-bundle.zip&amp;quot; -o &amp;quot;awscli-bundle.zip&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;if you don&amp;rsquo;t have curl installed install it!&lt;/p&gt;
-
-&lt;p&gt;Then unzip the archive:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;unzip awscli-bundle.zip
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To install just do:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That is all, you now have aws-cli installed. Configuring and using it is another story for another post.&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/install_aws-cli/</guid>
+      <description>What is AWS-cli? AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.
+How do I install it? Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version
+python --version  Then Download the installer:</description>
     </item>
     
   </channel>

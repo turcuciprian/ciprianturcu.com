@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Ciprian Turcu&#39;s website</title>
+    <link>http://ciprianturcu.com/categories/</link>
+    <description>Recent content in Categories on Ciprian Turcu&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2015 12:50:09 +0300</lastBuildDate>
+    
+	<atom:link href="http://ciprianturcu.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amazon</title>
+      <link>http://ciprianturcu.com/categories/amazon/</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/categories/amazon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>http://ciprianturcu.com/categories/blog/</link>
+      <pubDate>Thu, 27 Aug 2015 06:56:31 +0000</pubDate>
+      
+      <guid>http://ciprianturcu.com/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>http://ciprianturcu.com/categories/go/</link>
+      <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/categories/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://ciprianturcu.com/categories/hugo/</link>
+      <pubDate>Thu, 27 Aug 2015 06:56:31 +0000</pubDate>
+      
+      <guid>http://ciprianturcu.com/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>http://ciprianturcu.com/categories/install/</link>
+      <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/categories/install/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>http://ciprianturcu.com/categories/terminal/</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/categories/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>http://ciprianturcu.com/categories/tutorial/</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

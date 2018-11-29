@@ -2,164 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Ciprian Turcu&#39;s website</title>
-    <link>http://ciprianturcu.com/tags/hugo.html</link>
+    <link>http://ciprianturcu.com/tags/hugo/</link>
     <description>Recent content in Hugo on Ciprian Turcu&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Aug 2015 06:56:31 +0000</lastBuildDate>
-    <atom:link href="http://ciprianturcu.com/tags/hugo.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://ciprianturcu.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Using huGO</title>
-      <link>http://ciprianturcu.com/posts/using-hugo.html</link>
+      <link>http://ciprianturcu.com/posts/using-hugo/</link>
       <pubDate>Thu, 27 Aug 2015 06:56:31 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/using-hugo.html</guid>
-      <description>
-
-&lt;p&gt;###Creating a site&lt;/p&gt;
-
-&lt;p&gt;All you need to create a site is to go in the folder you want to create your site and write:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new site site-name
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;instead of &amp;ldquo;site-name&amp;rdquo; you can use &amp;ldquo;/path/to/site&amp;rdquo;. The site name is going to be a directory. When ever you want to run HuGO commands for that site you need to be in the site root folder.&lt;/p&gt;
-
-&lt;p&gt;###Configuring a bit&lt;/p&gt;
-
-&lt;p&gt;Once you ran the above command, all the site files will be generated. Now we need to configure it. Let&amp;rsquo;s say we want the domain of this to be your-website.com. To make HuGO generate for that particular website.website.
-To do this we need to edit config.toml that is in the root of the site.
-here you have to have this variable:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://your-site.com/&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can also set a site title:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;title = &amp;quot;Your Site title&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can set the theme:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;theme = &amp;quot;cactus&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The theme name has to be the directory name in the root of the hugo site/themes/&lt;/p&gt;
-
-&lt;p&gt;To download all the available themes for hugo run in the themes directory:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git remote add origin https://github.com/spf13/hugoThemes.git
-git pull origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And voila, you have all the themes in the themes directory&lt;/p&gt;
-
-&lt;p&gt;You can set other parameters:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[params]
-  description = &amp;quot;Site description goes here&amp;quot;
-  author = &amp;quot;Your full name&amp;quot;
-  cover = &amp;quot;images/cover.jpeg&amp;quot;
-  logo = &amp;quot;images/logo.jpeg&amp;quot;
-  githubName = &amp;quot;whatever&amp;quot;
-  twitterName = &amp;quot;whatever&amp;quot;
-  facebookName = &amp;quot;whatever&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The images you place in content/images and they will be added to the theme in the compiled version of the theme in the images folder.&lt;/p&gt;
-
-&lt;h3 id=&#34;create-a-post:f289f7106c21a975bb9cbd3325d6b48b&#34;&gt;Create a Post&lt;/h3&gt;
-
-&lt;p&gt;To create a post just type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new posts/your-post-name.cmd
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and then go to content/posts/your-post-name.md and edit that.&lt;/p&gt;
-
-&lt;p&gt;In there you will have:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;+++
-date = &amp;quot;2015-08-26T01:23:01+03:00&amp;quot;
-description = &amp;quot;Your post description goes here&amp;quot;
-title = &amp;quot;Your post title goes here&amp;quot;
-draft = true
-+++
-
-Your post content goes here. Use markup language to style it
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;create-a-page:f289f7106c21a975bb9cbd3325d6b48b&#34;&gt;Create a page:&lt;/h3&gt;
-
-&lt;p&gt;Just like post you do:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new page/your-page-name.cmd
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And that&amp;rsquo;s a page not a post.&lt;/p&gt;
-
-&lt;p&gt;This is pretty much it, the basics. More to come soon!&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/using-hugo/</guid>
+      <description>###Creating a site
+All you need to create a site is to go in the folder you want to create your site and write:
+hugo new site site-name  instead of &amp;ldquo;site-name&amp;rdquo; you can use &amp;ldquo;/path/to/site&amp;rdquo;. The site name is going to be a directory. When ever you want to run HuGO commands for that site you need to be in the site root folder.
+###Configuring a bit
+Once you ran the above command, all the site files will be generated.</description>
     </item>
     
     <item>
       <title>Install HuGO</title>
-      <link>http://ciprianturcu.com/posts/install_hugo.html</link>
+      <link>http://ciprianturcu.com/posts/install_hugo/</link>
       <pubDate>Wed, 26 Aug 2015 04:46:33 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/install_hugo.html</guid>
-      <description>&lt;p&gt;What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.&lt;/p&gt;
-
-&lt;p&gt;Jump to step 3 if you&amp;rsquo;re doing this from the terminal.
-1. Go to :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://gohugo.io/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download.
-2. Scroll down and select:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo_0.14_linux_amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Or whatever version is *_linux_amd64.tar.gz
-3. To get this from the terminal:
-You can either:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is of course depending on what you have installed/preffer.
-4. Unzip:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar -zxvf hugo_0.14_linux_amd64.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Rename
-&lt;code&gt;
-cd hugo_0.14_linux_amd64/
-mv hugo_0.14_linux_amd64 hugo
-&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Move
-&lt;code&gt;
-mv hugo /usr/local/bin/
-&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;And there you have it. Now if you write anywhere:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo version
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You should get a hugo version and see it&amp;rsquo;s working.&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/install_hugo/</guid>
+      <description>What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.
+Jump to step 3 if you&amp;rsquo;re doing this from the terminal. 1. Go to :
+https://gohugo.io/  Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download. 2. Scroll down and select:
+hugo_0.14_linux_amd64.tar.gz  Or whatever version is *_linux_amd64.tar.gz 3. To get this from the terminal: You can either:</description>
     </item>
     
   </channel>

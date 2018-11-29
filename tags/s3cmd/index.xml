@@ -2,86 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>S3cmd on Ciprian Turcu&#39;s website</title>
-    <link>http://ciprianturcu.com/tags/s3cmd.html</link>
+    <link>http://ciprianturcu.com/tags/s3cmd/</link>
     <description>Recent content in S3cmd on Ciprian Turcu&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Aug 2015 00:44:07 +0300</lastBuildDate>
-    <atom:link href="http://ciprianturcu.com/tags/s3cmd.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://ciprianturcu.com/tags/s3cmd/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Installing and using s3cmd</title>
-      <link>http://ciprianturcu.com/posts/s3cmd.html</link>
+      <link>http://ciprianturcu.com/posts/s3cmd/</link>
       <pubDate>Fri, 28 Aug 2015 00:44:07 +0300</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/s3cmd.html</guid>
-      <description>
-
-&lt;h3 id=&#34;download:03c1f89e12ff30dc5360bc3a9c21e0b2&#34;&gt;Download&lt;/h3&gt;
-
-&lt;p&gt;Go to &lt;a href=&#34;http://sourceforge.net/projects/s3tools/files/s3cmd/&#34;&gt;http://sourceforge.net/projects/s3tools/files/s3cmd/&lt;/a&gt; , select the latest version folder and download the tar.gz file.
-Unzip it with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar -zxvf &amp;lt;filename&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;install:03c1f89e12ff30dc5360bc3a9c21e0b2&#34;&gt;Install&lt;/h3&gt;
-
-&lt;p&gt;First make sure you have python setup tools installed. To install run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install python-setuptools
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then go inside your unpacked previously directory and run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo python setup.py install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And that&amp;rsquo;s it for installing. Now configuring and using:&lt;/p&gt;
-
-&lt;h3 id=&#34;configuring:03c1f89e12ff30dc5360bc3a9c21e0b2&#34;&gt;Configuring&lt;/h3&gt;
-
-&lt;p&gt;To configure, run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;s3cmd --configure
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You will be prompted for Access key and Secret Key. These are crucial and you have to generate some. Go here: &lt;a href=&#34;https://console.aws.amazon.com/iam/home?#security_credential&#34;&gt;https://console.aws.amazon.com/iam/home?#security_credential&lt;/a&gt; to the Access Keys and press the Create New access Key button to create a new one. The copy and paste it in the comand line when you get prompted.&lt;/li&gt;
-&lt;li&gt;Then you will be asked for region, just hit enter.&lt;/li&gt;
-&lt;li&gt;Then Encryption password. Set what ever you want.&lt;/li&gt;
-&lt;li&gt;Path to GPG program, just hit enter.&lt;/li&gt;
-&lt;li&gt;Path to GPG program, just hit enter.&lt;/li&gt;
-&lt;li&gt;Save the changes Press Y and hit enter.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;pushing-files-to-bucket:03c1f89e12ff30dc5360bc3a9c21e0b2&#34;&gt;Pushing files to bucket&lt;/h3&gt;
-
-&lt;p&gt;All you&amp;rsquo;re left with now is to push files to your bucket. Here&amp;rsquo;s how you do it:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You go in the directory containing the files you want to push&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;s3cmd put * s3://bucket-name/path -r --continue-put
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This checkes each file&amp;rsquo;s md5 and file size and skips them if they are different.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;is for everything
--r is for recursive
-&amp;ndash;continue-put is only uploading files that don&amp;rsquo;t exist or have the size or MD5 different on the server&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;For a faster run do&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;s3cmd sync ./  s3://bucket-name/path
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That&amp;rsquo;s all, fwew, go have some coffee&lt;/p&gt;
-</description>
+      <guid>http://ciprianturcu.com/posts/s3cmd/</guid>
+      <description>Download Go to http://sourceforge.net/projects/s3tools/files/s3cmd/ , select the latest version folder and download the tar.gz file. Unzip it with
+tar -zxvf &amp;lt;filename&amp;gt;  Install First make sure you have python setup tools installed. To install run:
+sudo apt-get install python-setuptools  Then go inside your unpacked previously directory and run:
+sudo python setup.py install  And that&amp;rsquo;s it for installing. Now configuring and using:
+Configuring To configure, run:
+s3cmd --configure   You will be prompted for Access key and Secret Key.</description>
     </item>
     
   </channel>
