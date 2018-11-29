@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Install on Ciprian Turcu&#39;s website</title>
+    <link>http://ciprianturcu.com/tags/install.html</link>
+    <description>Recent content in Install on Ciprian Turcu&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Aug 2015 04:46:33 +0300</lastBuildDate>
+    <atom:link href="http://ciprianturcu.com/tags/install.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Install HuGO</title>
+      <link>http://ciprianturcu.com/posts/install_hugo.html</link>
+      <pubDate>Wed, 26 Aug 2015 04:46:33 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/install_hugo.html</guid>
+      <description>&lt;p&gt;What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.&lt;/p&gt;
+
+&lt;p&gt;Jump to step 3 if you&amp;rsquo;re doing this from the terminal.
+1. Go to :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://gohugo.io/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download.
+2. Scroll down and select:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo_0.14_linux_amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or whatever version is *_linux_amd64.tar.gz
+3. To get this from the terminal:
+You can either:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is of course depending on what you have installed/preffer.
+4. Unzip:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tar -zxvf hugo_0.14_linux_amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Rename
+&lt;code&gt;
+cd hugo_0.14_linux_amd64/
+mv hugo_0.14_linux_amd64 hugo
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Move
+&lt;code&gt;
+mv hugo /usr/local/bin/
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And there you have it. Now if you write anywhere:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should get a hugo version and see it&amp;rsquo;s working.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing go (golang) on Ubuntu</title>
+      <link>http://ciprianturcu.com/posts/installing_go.html</link>
+      <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/installing_go.html</guid>
+      <description>
+
+&lt;p&gt;Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&amp;rsquo;t, I got to a place where I Do these steps exactly and you should be fine.&lt;/p&gt;
+
+&lt;h3 id=&#34;here-s-how-i-did-it:1825c4268862d9442c9c2ec774afced1&#34;&gt;Here&amp;rsquo;s how I did it:&lt;/h3&gt;
+
+&lt;p&gt;I went to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://golang.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I clicked the Download Go Button that took me to this link:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://golang.org/dl/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;From the Linux button I clicked to download:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can also go in the terminal and to download it you do&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When it finishes downloading, go inside the terminal to that path where you downloaded or if you downloaded via the terminal don&amp;rsquo;t GO anywhere, you are where you&amp;rsquo;re supposed to be, and do (to unpack) a&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tar -zxvf go1.5.linux-amd64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In my case the file name is go1.5.linux-amd64.tar.gz, It may change in time so be sure to change it accordingly, don&amp;rsquo;t just copy and paste.&lt;/p&gt;
+
+&lt;p&gt;great! Now copy (or move, I moved) the extracted directory in /usr/local/bin&lt;/p&gt;
+
+&lt;p&gt;You can have it anywhere but let&amp;rsquo;s just move it here.&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t forget to sudo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo go/ /usr/local/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Update your enviroment variables, so that when you write &amp;ldquo;go&amp;rdquo; it loads the go app from where it sits.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export GOROOT=/usr/local/bin/go
+export PATH=$PATH:/usr/local/bin/go/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is all, now if you just write in the terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;go version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is all, you have all the weapons you need, now GO!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install Amazon S3 AWS-cli</title>
+      <link>http://ciprianturcu.com/posts/install_aws-cli.html</link>
+      <pubDate>Wed, 26 Aug 2015 01:23:01 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/install_aws-cli.html</guid>
+      <description>
+
+&lt;h3 id=&#34;what-is-aws-cli:afd5bca8c26701bcade19257fb233fa1&#34;&gt;What is AWS-cli?&lt;/h3&gt;
+
+&lt;p&gt;AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-i-install-it:afd5bca8c26701bcade19257fb233fa1&#34;&gt;How do I install it?&lt;/h3&gt;
+
+&lt;p&gt;Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python --version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then Download the installer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl &amp;quot;https://s3.amazonaws.com/aws-cli/awscli-bundle.zip&amp;quot; -o &amp;quot;awscli-bundle.zip&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;if you don&amp;rsquo;t have curl installed install it!&lt;/p&gt;
+
+&lt;p&gt;Then unzip the archive:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;unzip awscli-bundle.zip
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To install just do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is all, you now have aws-cli installed. Configuring and using it is another story for another post.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
