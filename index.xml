@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Doxti, github, finally functional</title>
-      <link>http://ciprianturcu.com/posts/doxti-github-finally-functional.html</link>
-      <pubDate>Thu, 29 Nov 2018 01:31:38 +0200</pubDate>
-      
-      <guid>http://ciprianturcu.com/posts/doxti-github-finally-functional.html</guid>
-      <description>What did I just do? I am writing this from doxti, a local dev install, and I am proud to say, it&amp;rsquo;s publishing on github on it&amp;rsquo;s own. I&amp;rsquo;ve been waiting for this moment, where I have such a tool. built by me, for years! Might not be a big thing, but with my full time job + life in the way, I never really got around to building this.</description>
-    </item>
-    
-    <item>
       <title>Doxti, hugo and a personal project</title>
       <link>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</link>
       <pubDate>Thu, 29 Nov 2018 01:31:38 +0200</pubDate>
@@ -123,6 +114,15 @@ python --version  Then Download the installer:</description>
       <guid>http://ciprianturcu.com/posts/hello-world.html</guid>
       <description>What? Hello Dog is the new Hello World. This is my blog and this is obviously the first post. I am GOing to try and document some stuff here, mostly technical, about my findings, things that I try not to forget. Ever.
 Hi there! Welcome to my blog. This is a totally new direction that I am trying to GO in with my website and I&amp;rsquo;m trying out something new.</description>
+    </item>
+    
+    <item>
+      <title>Doxti, github, finally functional</title>
+      <link>http://ciprianturcu.com/posts/doxti-github-finally-functional.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/doxti-github-finally-functional.html</guid>
+      <description>What did I just do? I am writing this from doxti, a local dev install, and I am proud to say, it&amp;rsquo;s publishing on github on it&amp;rsquo;s own. I&amp;rsquo;ve been waiting for this moment, where I have such a tool. built by me, for years! Might not be a big thing, but with my full time job + life in the way, I never really got around to building this.</description>
     </item>
     
   </channel>
