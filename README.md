@@ -1,2 +1,0 @@
-# ciprianturcu.com
-My site
