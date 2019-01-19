@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S3cmd on CiprianTurcu.com</title>
+    <link>http://ciprianturcu.com/tags/s3cmd.html</link>
+    <description>Recent content in S3cmd on CiprianTurcu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Aug 2015 00:44:07 +0300</lastBuildDate>
+    
+	<atom:link href="http://ciprianturcu.com/tags/s3cmd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing and using s3cmd</title>
+      <link>http://ciprianturcu.com/posts/s3cmd.html</link>
+      <pubDate>Fri, 28 Aug 2015 00:44:07 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/s3cmd.html</guid>
+      <description>Download Go to http://sourceforge.net/projects/s3tools/files/s3cmd/ , select the latest version folder and download the tar.gz file. Unzip it with
+tar -zxvf &amp;lt;filename&amp;gt;  Install First make sure you have python setup tools installed. To install run:
+sudo apt-get install python-setuptools  Then go inside your unpacked previously directory and run:
+sudo python setup.py install  And that&amp;rsquo;s it for installing. Now configuring and using:
+Configuring To configure, run:
+s3cmd --configure   You will be prompted for Access key and Secret Key.</description>
+    </item>
+    
+  </channel>
+</rss>

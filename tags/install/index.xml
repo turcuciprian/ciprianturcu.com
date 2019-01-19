@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Install on CiprianTurcu.com</title>
+    <link>http://ciprianturcu.com/tags/install.html</link>
+    <description>Recent content in Install on CiprianTurcu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Aug 2015 04:46:33 +0300</lastBuildDate>
+    
+	<atom:link href="http://ciprianturcu.com/tags/install/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install HuGO</title>
+      <link>http://ciprianturcu.com/posts/install_hugo.html</link>
+      <pubDate>Wed, 26 Aug 2015 04:46:33 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/install_hugo.html</guid>
+      <description>What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.
+Jump to step 3 if you&amp;rsquo;re doing this from the terminal. 1. Go to :
+https://gohugo.io/  Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download. 2. Scroll down and select:
+hugo_0.14_linux_amd64.tar.gz  Or whatever version is *_linux_amd64.tar.gz 3. To get this from the terminal: You can either:</description>
+    </item>
+    
+    <item>
+      <title>Installing go (golang) on Ubuntu</title>
+      <link>http://ciprianturcu.com/posts/installing_go.html</link>
+      <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/installing_go.html</guid>
+      <description>Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&amp;rsquo;t, I got to a place where I Do these steps exactly and you should be fine.
+Here&amp;rsquo;s how I did it: I went to:</description>
+    </item>
+    
+    <item>
+      <title>Install Amazon S3 AWS-cli</title>
+      <link>http://ciprianturcu.com/posts/install_aws-cli.html</link>
+      <pubDate>Wed, 26 Aug 2015 01:23:01 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/install_aws-cli.html</guid>
+      <description>What is AWS-cli? AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.
+How do I install it? Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version
+python --version  Then Download the installer:</description>
+    </item>
+    
+  </channel>
+</rss>

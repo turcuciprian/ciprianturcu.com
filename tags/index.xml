@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on CiprianTurcu.com</title>
+    <link>http://ciprianturcu.com/tags.html</link>
+    <description>Recent content in Tags on CiprianTurcu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2015 12:50:09 +0300</lastBuildDate>
+    
+	<atom:link href="http://ciprianturcu.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amazon</title>
+      <link>http://ciprianturcu.com/tags/amazon.html</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/amazon.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aws Cli</title>
+      <link>http://ciprianturcu.com/tags/aws-cli.html</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/aws-cli.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Basics</title>
+      <link>http://ciprianturcu.com/tags/basics.html</link>
+      <pubDate>Thu, 27 Aug 2015 23:32:45 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/basics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Console</title>
+      <link>http://ciprianturcu.com/tags/console.html</link>
+      <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/console.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://ciprianturcu.com/tags/git.html</link>
+      <pubDate>Thu, 27 Aug 2015 23:32:45 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/git.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>http://ciprianturcu.com/tags/go.html</link>
+      <pubDate>Thu, 27 Aug 2015 06:56:31 +0000</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/go.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://ciprianturcu.com/tags/hugo.html</link>
+      <pubDate>Thu, 27 Aug 2015 06:56:31 +0000</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/hugo.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>http://ciprianturcu.com/tags/install.html</link>
+      <pubDate>Wed, 26 Aug 2015 04:46:33 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/install.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://ciprianturcu.com/tags/linux.html</link>
+      <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/linux.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Put</title>
+      <link>http://ciprianturcu.com/tags/put.html</link>
+      <pubDate>Fri, 28 Aug 2015 00:44:07 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/put.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>http://ciprianturcu.com/tags/s3.html</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/s3.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3cmd</title>
+      <link>http://ciprianturcu.com/tags/s3cmd.html</link>
+      <pubDate>Fri, 28 Aug 2015 00:44:07 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/s3cmd.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sync</title>
+      <link>http://ciprianturcu.com/tags/sync.html</link>
+      <pubDate>Fri, 28 Aug 2015 00:44:07 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/sync.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>http://ciprianturcu.com/tags/terminal.html</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/terminal.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>http://ciprianturcu.com/tags/tutorial.html</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/tutorial.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Useful</title>
+      <link>http://ciprianturcu.com/tags/useful.html</link>
+      <pubDate>Thu, 27 Aug 2015 23:32:45 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/tags/useful.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Useful on CiprianTurcu.com</title>
+    <link>http://ciprianturcu.com/tags/useful.html</link>
+    <description>Recent content in Useful on CiprianTurcu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Aug 2015 23:32:45 +0300</lastBuildDate>
+    
+	<atom:link href="http://ciprianturcu.com/tags/useful/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Useful Git commands</title>
+      <link>http://ciprianturcu.com/posts/git_usefulness.html</link>
+      <pubDate>Thu, 27 Aug 2015 23:32:45 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/git_usefulness.html</guid>
+      <description>Initialize git in a working directory So you have a directory where you want to set up git in. You cd into that directory and you do
+git init  That&amp;rsquo;s all it takes to have git initialized in that directory.
+Connect to a remote repository Now what you want is to connect that git instance to a remote branch. To do this run:
+git remote add origin &amp;lt;URL&amp;gt;  Now you&amp;rsquo;re connected to a remote repo.</description>
+    </item>
+    
+  </channel>
+</rss>

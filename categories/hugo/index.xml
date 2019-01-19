@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on CiprianTurcu.com</title>
+    <link>http://ciprianturcu.com/categories/hugo.html</link>
+    <description>Recent content in Hugo on CiprianTurcu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Aug 2015 06:56:31 +0000</lastBuildDate>
+    
+	<atom:link href="http://ciprianturcu.com/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using huGO</title>
+      <link>http://ciprianturcu.com/posts/using-hugo.html</link>
+      <pubDate>Thu, 27 Aug 2015 06:56:31 +0000</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/using-hugo.html</guid>
+      <description>###Creating a site
+All you need to create a site is to go in the folder you want to create your site and write:
+hugo new site site-name  instead of &amp;ldquo;site-name&amp;rdquo; you can use &amp;ldquo;/path/to/site&amp;rdquo;. The site name is going to be a directory. When ever you want to run HuGO commands for that site you need to be in the site root folder.
+###Configuring a bit
+Once you ran the above command, all the site files will be generated.</description>
+    </item>
+    
+    <item>
+      <title>Install HuGO</title>
+      <link>http://ciprianturcu.com/posts/install_hugo.html</link>
+      <pubDate>Wed, 26 Aug 2015 04:46:33 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/install_hugo.html</guid>
+      <description>What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.
+Jump to step 3 if you&amp;rsquo;re doing this from the terminal. 1. Go to :
+https://gohugo.io/  Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download. 2. Scroll down and select:
+hugo_0.14_linux_amd64.tar.gz  Or whatever version is *_linux_amd64.tar.gz 3. To get this from the terminal: You can either:</description>
+    </item>
+    
+  </channel>
+</rss>

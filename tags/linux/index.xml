@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on CiprianTurcu.com</title>
+    <link>http://ciprianturcu.com/tags/linux.html</link>
+    <description>Recent content in Linux on CiprianTurcu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Aug 2015 02:01:23 +0300</lastBuildDate>
+    
+	<atom:link href="http://ciprianturcu.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing go (golang) on Ubuntu</title>
+      <link>http://ciprianturcu.com/posts/installing_go.html</link>
+      <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/installing_go.html</guid>
+      <description>Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&amp;rsquo;t, I got to a place where I Do these steps exactly and you should be fine.
+Here&amp;rsquo;s how I did it: I went to:</description>
+    </item>
+    
+  </channel>
+</rss>

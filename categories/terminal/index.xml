@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on CiprianTurcu.com</title>
+    <link>http://ciprianturcu.com/categories/terminal.html</link>
+    <description>Recent content in Terminal on CiprianTurcu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2015 12:50:09 +0300</lastBuildDate>
+    
+	<atom:link href="http://ciprianturcu.com/categories/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuring and using aws-cli</title>
+      <link>http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</link>
+      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</guid>
+      <description>Configuring Run
+aws configure  This will ask you for the following keys:
+AWS Access Key ID [None]: AWS Secret Access Key [None]: Default region name [None]: Default output format [None]:  Create a new Access key and Secret Access key by going here https://console.aws.amazon.com/iam/home?#security_credential and selecting Access Keys, create new access key and use those credentials.
+You have these regions and points:
+US East (N. Virginia) -	us-east-1 US West (Oregon) - us-west-2 EU (Ireland)	eu-west-1  More you can find here: http://docs.</description>
+    </item>
+    
+    <item>
+      <title>Installing and using s3cmd</title>
+      <link>http://ciprianturcu.com/posts/s3cmd.html</link>
+      <pubDate>Fri, 28 Aug 2015 00:44:07 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/s3cmd.html</guid>
+      <description>Download Go to http://sourceforge.net/projects/s3tools/files/s3cmd/ , select the latest version folder and download the tar.gz file. Unzip it with
+tar -zxvf &amp;lt;filename&amp;gt;  Install First make sure you have python setup tools installed. To install run:
+sudo apt-get install python-setuptools  Then go inside your unpacked previously directory and run:
+sudo python setup.py install  And that&amp;rsquo;s it for installing. Now configuring and using:
+Configuring To configure, run:
+s3cmd --configure   You will be prompted for Access key and Secret Key.</description>
+    </item>
+    
+    <item>
+      <title>Useful Git commands</title>
+      <link>http://ciprianturcu.com/posts/git_usefulness.html</link>
+      <pubDate>Thu, 27 Aug 2015 23:32:45 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/git_usefulness.html</guid>
+      <description>Initialize git in a working directory So you have a directory where you want to set up git in. You cd into that directory and you do
+git init  That&amp;rsquo;s all it takes to have git initialized in that directory.
+Connect to a remote repository Now what you want is to connect that git instance to a remote branch. To do this run:
+git remote add origin &amp;lt;URL&amp;gt;  Now you&amp;rsquo;re connected to a remote repo.</description>
+    </item>
+    
+    <item>
+      <title>Install HuGO</title>
+      <link>http://ciprianturcu.com/posts/install_hugo.html</link>
+      <pubDate>Wed, 26 Aug 2015 04:46:33 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/install_hugo.html</guid>
+      <description>What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.
+Jump to step 3 if you&amp;rsquo;re doing this from the terminal. 1. Go to :
+https://gohugo.io/  Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download. 2. Scroll down and select:
+hugo_0.14_linux_amd64.tar.gz  Or whatever version is *_linux_amd64.tar.gz 3. To get this from the terminal: You can either:</description>
+    </item>
+    
+    <item>
+      <title>Install Amazon S3 AWS-cli</title>
+      <link>http://ciprianturcu.com/posts/install_aws-cli.html</link>
+      <pubDate>Wed, 26 Aug 2015 01:23:01 +0300</pubDate>
+      
+      <guid>http://ciprianturcu.com/posts/install_aws-cli.html</guid>
+      <description>What is AWS-cli? AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.
+How do I install it? Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version
+python --version  Then Download the installer:</description>
+    </item>
+    
+  </channel>
+</rss>
