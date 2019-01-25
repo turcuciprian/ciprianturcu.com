@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Configuring and using aws-cli</title>
-  <meta property="og:title" content="Configuring and using aws-cli" />
-  <meta name="twitter:title" content="Configuring and using aws-cli" />
+  <title>Installing and using s3cmd</title>
+  <meta property="og:title" content="Installing and using s3cmd" />
+  <meta name="twitter:title" content="Installing and using s3cmd" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Ciprian Turcu&#39;s Website" />
-  <meta property="og:url" content="https://ciprianturcu.com/posts/configuring-and-using-aws-cli.html" />
+  <meta property="og:url" content="https://ciprianturcu.com/posts/installing-and-using-s3cmd.html" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -47,12 +47,12 @@
 
 <article class="p-article">
   <header>
-    <h1>Configuring and using aws-cli</h1>
+    <h1>Installing and using s3cmd</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2015-09-02T09:50:00Z">
-          Sep 2, 2015
+        <time datetime="2015-08-27T21:44:00Z">
+          Aug 27, 2015
         </time>
       </div>
       
@@ -62,45 +62,70 @@
   <section id="js-article" class="p-article__body">
     
 
+<h3 id="download">Download</h3>
+
+<p>Go to <a href="http://sourceforge.net/projects/s3tools/files/s3cmd/">http://sourceforge.net/projects/s3tools/files/s3cmd/</a> , select the latest version folder and download the tar.gz file.
+Unzip it with</p>
+
+<pre><code>tar -zxvf &lt;filename&gt;
+</code></pre>
+
+<h3 id="install">Install</h3>
+
+<p>First make sure you have python setup tools installed. To install run:</p>
+
+<pre><code>sudo apt-get install python-setuptools
+</code></pre>
+
+<p>Then go inside your unpacked previously directory and run:</p>
+
+<pre><code>sudo python setup.py install
+</code></pre>
+
+<p>And that&rsquo;s it for installing. Now configuring and using:</p>
+
 <h3 id="configuring">Configuring</h3>
 
-<p>Run</p>
+<p>To configure, run:</p>
 
-<pre><code>aws configure
+<pre><code>s3cmd --configure
 </code></pre>
 
-<p>This will ask you for the following keys:</p>
+<ul>
+<li>You will be prompted for Access key and Secret Key. These are crucial and you have to generate some. Go here: <a href="https://console.aws.amazon.com/iam/home?#security_credential">https://console.aws.amazon.com/iam/home?#security_credential</a> to the Access Keys and press the Create New access Key button to create a new one. The copy and paste it in the comand line when you get prompted.</li>
+<li>Then you will be asked for region, just hit enter.</li>
+<li>Then Encryption password. Set what ever you want.</li>
+<li>Path to GPG program, just hit enter.</li>
+<li>Path to GPG program, just hit enter.</li>
+<li>Save the changes Press Y and hit enter.</li>
+</ul>
 
-<pre><code>AWS Access Key ID [None]:
-AWS Secret Access Key [None]:
-Default region name [None]:
-Default output format [None]: 
+<h3 id="pushing-files-to-bucket">Pushing files to bucket</h3>
+
+<p>All you&rsquo;re left with now is to push files to your bucket. Here&rsquo;s how you do it:</p>
+
+<ol>
+<li>You go in the directory containing the files you want to push</li>
+<li>You type:
+<code>
+s3cmd put * s3://bucket-name/path -r --continue-put
+</code>
+This checkes each file&rsquo;s md5 and file size and skips them if they are different.</li>
+</ol>
+
+<ul>
+<li>is for everything
+-r is for recursive
+&ndash;continue-put is only uploading files that don&rsquo;t exist or have the size or MD5 different on the server</li>
+</ul>
+
+<p>For a faster run do</p>
+
+<pre><code>s3cmd sync ./  s3://bucket-name/path
+
 </code></pre>
 
-<p>Create a new Access key and Secret Access key by going here <a href="https://console.aws.amazon.com/iam/home?#security_credential">https://console.aws.amazon.com/iam/home?#security_credential</a> and selecting Access Keys, create new access key and use those credentials.</p>
-
-<p>You have these regions and points:</p>
-
-<pre><code>US East (N. Virginia) -	us-east-1
-US West (Oregon) - us-west-2
-EU (Ireland)	eu-west-1
-</code></pre>
-
-<p>More you can find here: <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region">http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region</a></p>
-
-<p>For default autput format you can add text</p>
-
-<h3 id="using">Using</h3>
-
-<p>After configuring, just go in your directory that you want to upload to the s3 bucket and do this command:</p>
-
-<pre><code>aws s3 sync . s3://bucket-name-goes-here
-</code></pre>
-
-<p>That should be it. If you want to delete files from the s3 bucket that where deleted locally when you sinc add &ndash;delete at the end of your command. Ex:</p>
-
-<pre><code>aws s3 sync . s3://bucket-name-goes-here --delete
-</code></pre>
+<p>That&rsquo;s all, fwew, go have some coffee</p>
 
   </section>
   <footer>
@@ -109,12 +134,12 @@ EU (Ireland)	eu-west-1
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html">Newer</a>
+          <a href="https://ciprianturcu.com/posts/configuring-and-using-aws-cli.html">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://ciprianturcu.com/posts/installing-and-using-s3cmd.html">Older</a>
+          <a href="https://ciprianturcu.com/posts/useful-git-commands.html">Older</a>
           
         </div>
       </div>

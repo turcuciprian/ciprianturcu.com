@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Configuring and using aws-cli</title>
-  <meta property="og:title" content="Configuring and using aws-cli" />
-  <meta name="twitter:title" content="Configuring and using aws-cli" />
+  <title>Install HuGO</title>
+  <meta property="og:title" content="Install HuGO" />
+  <meta name="twitter:title" content="Install HuGO" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Ciprian Turcu&#39;s Website" />
-  <meta property="og:url" content="https://ciprianturcu.com/posts/configuring-and-using-aws-cli.html" />
+  <meta property="og:url" content="https://ciprianturcu.com/posts/install-hugo.html" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -47,12 +47,12 @@
 
 <article class="p-article">
   <header>
-    <h1>Configuring and using aws-cli</h1>
+    <h1>Install HuGO</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2015-09-02T09:50:00Z">
-          Sep 2, 2015
+        <time datetime="2015-08-26T01:46:00Z">
+          Aug 26, 2015
         </time>
       </div>
       
@@ -60,47 +60,56 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
+    <p>What&rsquo;s ironic is that I&rsquo;m creating this page for Hugo to process and generate later. Here&rsquo;s how you install (in Ubuntu) Hugo.</p>
 
-<h3 id="configuring">Configuring</h3>
+<p>Jump to step 3 if you&rsquo;re doing this from the terminal.
+1. Go to :</p>
 
-<p>Run</p>
-
-<pre><code>aws configure
+<pre><code>https://gohugo.io/
 </code></pre>
 
-<p>This will ask you for the following keys:</p>
+<p>Click &ldquo;Install&rdquo; and after it scrolls down click download.
+2. Scroll down and select:</p>
 
-<pre><code>AWS Access Key ID [None]:
-AWS Secret Access Key [None]:
-Default region name [None]:
-Default output format [None]: 
+<pre><code>hugo_0.14_linux_amd64.tar.gz
 </code></pre>
 
-<p>Create a new Access key and Secret Access key by going here <a href="https://console.aws.amazon.com/iam/home?#security_credential">https://console.aws.amazon.com/iam/home?#security_credential</a> and selecting Access Keys, create new access key and use those credentials.</p>
+<p>Or whatever version is *_linux_amd64.tar.gz
+3. To get this from the terminal:
+You can either:</p>
 
-<p>You have these regions and points:</p>
-
-<pre><code>US East (N. Virginia) -	us-east-1
-US West (Oregon) - us-west-2
-EU (Ireland)	eu-west-1
+<pre><code>wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
 </code></pre>
 
-<p>More you can find here: <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region">http://docs.aws.amazon.com/general/latest/gr/rande.html#as_region</a></p>
+<p>or</p>
 
-<p>For default autput format you can add text</p>
-
-<h3 id="using">Using</h3>
-
-<p>After configuring, just go in your directory that you want to upload to the s3 bucket and do this command:</p>
-
-<pre><code>aws s3 sync . s3://bucket-name-goes-here
+<pre><code>curl https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
 </code></pre>
 
-<p>That should be it. If you want to delete files from the s3 bucket that where deleted locally when you sinc add &ndash;delete at the end of your command. Ex:</p>
+<p>This is of course depending on what you have installed/preffer.
+4. Unzip:</p>
 
-<pre><code>aws s3 sync . s3://bucket-name-goes-here --delete
+<pre><code>tar -zxvf hugo_0.14_linux_amd64.tar.gz
 </code></pre>
+
+<ol>
+<li>Rename
+<code>
+cd hugo_0.14_linux_amd64/
+mv hugo_0.14_linux_amd64 hugo
+</code></li>
+<li>Move
+<code>
+mv hugo /usr/local/bin/
+</code></li>
+</ol>
+
+<p>And there you have it. Now if you write anywhere:</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<p>You should get a hugo version and see it&rsquo;s working.</p>
 
   </section>
   <footer>
@@ -109,12 +118,12 @@ EU (Ireland)	eu-west-1
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html">Newer</a>
+          <a href="https://ciprianturcu.com/posts/install-amazon-s3-aws-cli.html">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://ciprianturcu.com/posts/installing-and-using-s3cmd.html">Older</a>
+          <a href="https://ciprianturcu.com/posts/installing-gogolang-on-ubuntu.html">Older</a>
           
         </div>
       </div>

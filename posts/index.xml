@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Ciprian Turcu&#39;s Website</title>
-    <link>http://ciprianturcu.com/posts.html</link>
+    <link>https://ciprianturcu.com/posts.html</link>
     <description>Recent content in Posts on Ciprian Turcu&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jan 2019 01:31:38 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jan 2019 23:31:00 +0000</lastBuildDate>
     
-	<atom:link href="http://ciprianturcu.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ciprianturcu.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Doxti, github, finally functional</title>
-      <link>http://ciprianturcu.com/posts/doxti-github-finally-functional.html</link>
-      <pubDate>Sun, 20 Jan 2019 01:31:38 +0200</pubDate>
+      <link>https://ciprianturcu.com/posts/doxti-github-finally-functional.html</link>
+      <pubDate>Sat, 19 Jan 2019 23:31:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/doxti-github-finally-functional.html</guid>
+      <guid>https://ciprianturcu.com/posts/doxti-github-finally-functional.html</guid>
       <description>What did I just do? I am writing this from doxti, a local dev install, and I am proud to say, it&amp;rsquo;s publishing on github on it&amp;rsquo;s own. I&amp;rsquo;ve been waiting for this moment, where I have such a tool. built by me, for years! Might not be a big thing, but with my full time job + life in the way, I never really got around to building this.</description>
     </item>
     
     <item>
       <title>Doxti, hugo and a personal project</title>
-      <link>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</link>
-      <pubDate>Thu, 29 Nov 2018 01:31:38 +0200</pubDate>
+      <link>https://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</link>
+      <pubDate>Wed, 28 Nov 2018 23:31:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</guid>
+      <guid>https://ciprianturcu.com/posts/doxti-hugo-and-a-personal-project.html</guid>
       <description>A static site generator, Doxti and a personal project.A static site generator, doxti and a personal project. Are you getting it? these are not 3 separate things. This is one thing. For the record, this is officially the first post I am writing in Doxti , and will generate with doxti to publish to my site manually after.
 Yes, I am using my own product to write this post. Cool heh?</description>
     </item>
     
     <item>
       <title>Configuring and using aws-cli</title>
-      <link>http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</link>
-      <pubDate>Wed, 02 Sep 2015 12:50:09 +0300</pubDate>
+      <link>https://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</link>
+      <pubDate>Wed, 02 Sep 2015 09:50:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</guid>
+      <guid>https://ciprianturcu.com/posts/configuring-and-using-aws-cli.html</guid>
       <description>Configuring Run
 aws configure  This will ask you for the following keys:
 AWS Access Key ID [None]: AWS Secret Access Key [None]: Default region name [None]: Default output format [None]:  Create a new Access key and Secret Access key by going here https://console.aws.amazon.com/iam/home?#security_credential and selecting Access Keys, create new access key and use those credentials.
@@ -45,10 +45,10 @@ US East (N. Virginia) -	us-east-1 US West (Oregon) - us-west-2 EU (Ireland)	eu-w
     
     <item>
       <title>Installing and using s3cmd</title>
-      <link>http://ciprianturcu.com/posts/s3cmd.html</link>
-      <pubDate>Fri, 28 Aug 2015 00:44:07 +0300</pubDate>
+      <link>https://ciprianturcu.com/posts/installing-and-using-s3cmd.html</link>
+      <pubDate>Thu, 27 Aug 2015 21:44:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/s3cmd.html</guid>
+      <guid>https://ciprianturcu.com/posts/installing-and-using-s3cmd.html</guid>
       <description>Download Go to http://sourceforge.net/projects/s3tools/files/s3cmd/ , select the latest version folder and download the tar.gz file. Unzip it with
 tar -zxvf &amp;lt;filename&amp;gt;  Install First make sure you have python setup tools installed. To install run:
 sudo apt-get install python-setuptools  Then go inside your unpacked previously directory and run:
@@ -59,10 +59,10 @@ s3cmd --configure   You will be prompted for Access key and Secret Key.</descrip
     
     <item>
       <title>Useful Git commands</title>
-      <link>http://ciprianturcu.com/posts/git_usefulness.html</link>
-      <pubDate>Thu, 27 Aug 2015 23:32:45 +0300</pubDate>
+      <link>https://ciprianturcu.com/posts/useful-git-commands.html</link>
+      <pubDate>Thu, 27 Aug 2015 21:44:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/git_usefulness.html</guid>
+      <guid>https://ciprianturcu.com/posts/useful-git-commands.html</guid>
       <description>Initialize git in a working directory So you have a directory where you want to set up git in. You cd into that directory and you do
 git init  That&amp;rsquo;s all it takes to have git initialized in that directory.
 Connect to a remote repository Now what you want is to connect that git instance to a remote branch. To do this run:
@@ -71,10 +71,10 @@ git remote add origin &amp;lt;URL&amp;gt;  Now you&amp;rsquo;re connected to a r
     
     <item>
       <title>Using huGO</title>
-      <link>http://ciprianturcu.com/posts/using-hugo.html</link>
-      <pubDate>Thu, 27 Aug 2015 06:56:31 +0000</pubDate>
+      <link>https://ciprianturcu.com/posts/using-hugo.html</link>
+      <pubDate>Thu, 27 Aug 2015 21:44:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/using-hugo.html</guid>
+      <guid>https://ciprianturcu.com/posts/using-hugo.html</guid>
       <description>###Creating a site
 All you need to create a site is to go in the folder you want to create your site and write:
 hugo new site site-name  instead of &amp;ldquo;site-name&amp;rdquo; you can use &amp;ldquo;/path/to/site&amp;rdquo;. The site name is going to be a directory. When ever you want to run HuGO commands for that site you need to be in the site root folder.
@@ -83,11 +83,22 @@ Once you ran the above command, all the site files will be generated.</descripti
     </item>
     
     <item>
-      <title>Install HuGO</title>
-      <link>http://ciprianturcu.com/posts/install_hugo.html</link>
-      <pubDate>Wed, 26 Aug 2015 04:46:33 +0300</pubDate>
+      <title>Install Amazon S3 AWS-cli</title>
+      <link>https://ciprianturcu.com/posts/install-amazon-s3-aws-cli.html</link>
+      <pubDate>Wed, 26 Aug 2015 19:23:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/install_hugo.html</guid>
+      <guid>https://ciprianturcu.com/posts/install-amazon-s3-aws-cli.html</guid>
+      <description>What is AWS-cli? AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.
+How do I install it? Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version
+python --version  Then Download the installer:</description>
+    </item>
+    
+    <item>
+      <title>Install HuGO</title>
+      <link>https://ciprianturcu.com/posts/install-hugo.html</link>
+      <pubDate>Wed, 26 Aug 2015 01:46:00 +0000</pubDate>
+      
+      <guid>https://ciprianturcu.com/posts/install-hugo.html</guid>
       <description>What&amp;rsquo;s ironic is that I&amp;rsquo;m creating this page for Hugo to process and generate later. Here&amp;rsquo;s how you install (in Ubuntu) Hugo.
 Jump to step 3 if you&amp;rsquo;re doing this from the terminal. 1. Go to :
 https://gohugo.io/  Click &amp;ldquo;Install&amp;rdquo; and after it scrolls down click download. 2. Scroll down and select:
@@ -95,32 +106,21 @@ hugo_0.14_linux_amd64.tar.gz  Or whatever version is *_linux_amd64.tar.gz 3. To 
     </item>
     
     <item>
-      <title>Installing go (golang) on Ubuntu</title>
-      <link>http://ciprianturcu.com/posts/installing_go.html</link>
-      <pubDate>Wed, 26 Aug 2015 02:01:23 +0300</pubDate>
+      <title>Installing go,golang on Ubuntu</title>
+      <link>https://ciprianturcu.com/posts/installing-gogolang-on-ubuntu.html</link>
+      <pubDate>Tue, 25 Aug 2015 23:01:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/installing_go.html</guid>
+      <guid>https://ciprianturcu.com/posts/installing-gogolang-on-ubuntu.html</guid>
       <description>Installing go can be done multiple ways. After installing it via apt-get and trying to install the binary from github, I gave up, downloaded the source and did a much faster and easier install.After a long trial and error and trying to understand why everything I do works and doesn&amp;rsquo;t, I got to a place where I Do these steps exactly and you should be fine.
 Here&amp;rsquo;s how I did it: I went to:</description>
     </item>
     
     <item>
-      <title>Install Amazon S3 AWS-cli</title>
-      <link>http://ciprianturcu.com/posts/install_aws-cli.html</link>
-      <pubDate>Wed, 26 Aug 2015 01:23:01 +0300</pubDate>
-      
-      <guid>http://ciprianturcu.com/posts/install_aws-cli.html</guid>
-      <description>What is AWS-cli? AWS-CLI is a comand line tool that helps you manage your bucket from a command line. That&amp;rsquo;s right! once configured you can push and delete your files from your S# bucket via command line.
-How do I install it? Since this is built in python,weel, first you have to have python installed. To check that and see it&amp;rsquo;s version
-python --version  Then Download the installer:</description>
-    </item>
-    
-    <item>
       <title>Hello dog!</title>
-      <link>http://ciprianturcu.com/posts/hello-world.html</link>
-      <pubDate>Tue, 25 Aug 2015 02:22:30 +0300</pubDate>
+      <link>https://ciprianturcu.com/posts/hello-dog.html</link>
+      <pubDate>Tue, 25 Aug 2015 22:23:00 +0000</pubDate>
       
-      <guid>http://ciprianturcu.com/posts/hello-world.html</guid>
+      <guid>https://ciprianturcu.com/posts/hello-dog.html</guid>
       <description>What? Hello Dog is the new Hello World. This is my blog and this is obviously the first post. I am GOing to try and document some stuff here, mostly technical, about my findings, things that I try not to forget. Ever.
 Hi there! Welcome to my blog. This is a totally new direction that I am trying to GO in with my website and I&amp;rsquo;m trying out something new.</description>
     </item>
