@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Ciprian Turcu&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jan 2019 23:31:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jan 2019 06:21:12 +0000</lastBuildDate>
     
 	<atom:link href="https://ciprianturcu.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Moving Bloging</title>
+      <link>https://ciprianturcu.com/posts/moving-bloging.html</link>
+      <pubDate>Tue, 29 Jan 2019 06:21:12 +0000</pubDate>
+      
+      <guid>https://ciprianturcu.com/posts/moving-bloging.html</guid>
+      <description>Hello, Since last time, I decided to move my blogging direction to some place else. I&amp;rsquo;ve been working on something since September 2018 and It&amp;rsquo;s up, functional, at https://doxti.com. Doxti is basically a UI for http://goHugo.io , a CMS if you wish. A way to write blog posts and build them using hugo( fast, and with a specific static site builder). The catch is that you have to create them and manage them on doxti.</description>
+    </item>
     
     <item>
       <title>Doxti, github, finally functional</title>

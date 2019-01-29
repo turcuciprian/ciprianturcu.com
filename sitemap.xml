@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ciprianturcu.com/posts/moving-bloging.html</loc>
+    <lastmod>2019-01-29T06:21:12+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ciprianturcu.com/posts/doxti-github-finally-functional.html</loc>
     <lastmod>2019-01-19T23:31:00+00:00</lastmod>
   </url>
@@ -59,13 +64,13 @@
   
   <url>
     <loc>https://ciprianturcu.com/</loc>
-    <lastmod>2019-01-19T23:31:00+00:00</lastmod>
+    <lastmod>2019-01-29T06:21:12+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ciprianturcu.com/posts.html</loc>
-    <lastmod>2019-01-19T23:31:00+00:00</lastmod>
+    <lastmod>2019-01-29T06:21:12+00:00</lastmod>
     <priority>0</priority>
   </url>
   
