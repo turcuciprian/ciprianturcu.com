@@ -53,20 +53,6 @@ US East (N. Virginia) -	us-east-1 US West (Oregon) - us-west-2 EU (Ireland)	eu-w
     </item>
     
     <item>
-      <title>Installing and using s3cmd</title>
-      <link>https://ciprianturcu.com/posts/installing-and-using-s3cmd.html</link>
-      <pubDate>Thu, 27 Aug 2015 21:44:00 +0000</pubDate>
-      
-      <guid>https://ciprianturcu.com/posts/installing-and-using-s3cmd.html</guid>
-      <description>Download Go to http://sourceforge.net/projects/s3tools/files/s3cmd/ , select the latest version folder and download the tar.gz file. Unzip it with
-tar -zxvf &amp;lt;filename&amp;gt;  Install First make sure you have python setup tools installed. To install run:
-sudo apt-get install python-setuptools  Then go inside your unpacked previously directory and run:
-sudo python setup.py install  And that&amp;rsquo;s it for installing. Now configuring and using:
-Configuring To configure, run:
-s3cmd --configure   You will be prompted for Access key and Secret Key.</description>
-    </item>
-    
-    <item>
       <title>Useful Git commands</title>
       <link>https://ciprianturcu.com/posts/useful-git-commands.html</link>
       <pubDate>Thu, 27 Aug 2015 21:44:00 +0000</pubDate>
@@ -89,6 +75,20 @@ All you need to create a site is to go in the folder you want to create your sit
 hugo new site site-name  instead of &amp;ldquo;site-name&amp;rdquo; you can use &amp;ldquo;/path/to/site&amp;rdquo;. The site name is going to be a directory. When ever you want to run HuGO commands for that site you need to be in the site root folder.
 ###Configuring a bit
 Once you ran the above command, all the site files will be generated.</description>
+    </item>
+    
+    <item>
+      <title>Installing and using s3cmd</title>
+      <link>https://ciprianturcu.com/posts/installing-and-using-s3cmd.html</link>
+      <pubDate>Thu, 27 Aug 2015 12:30:00 +0000</pubDate>
+      
+      <guid>https://ciprianturcu.com/posts/installing-and-using-s3cmd.html</guid>
+      <description>Download Go to http://sourceforge.net/projects/s3tools/files/s3cmd/ , select the latest version folder and download the tar.gz file. Unzip it with
+tar -zxvf &amp;lt;filename&amp;gt;  Install First make sure you have python setup tools installed. To install run:
+sudo apt-get install python-setuptools  Then go inside your unpacked previously directory and run:
+sudo python setup.py install  And that&amp;rsquo;s it for installing. Now configuring and using:
+Configuring To configure, run:
+s3cmd --configure   You will be prompted for Access key and Secret Key.</description>
     </item>
     
     <item>
